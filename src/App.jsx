@@ -2,7 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function HaygridWebsite() {
-  const mailto = "mailto:contact@haygrid.systems?subject=Consultation%20Request%20—%20Haygrid%20Systems";
+	const emailAddress = "haygridsystems@gmail.com"
+  const mailto = "mailto:" + emailAddress + "?subject=Consultation%20Request%20—%20Haygrid%20Systems";
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-zinc-950 dark:to-zinc-900 text-zinc-900 dark:text-zinc-100">
@@ -33,7 +34,8 @@ export default function HaygridWebsite() {
               We connect your <span className="text-indigo-600">systems</span> so your business can move <span className="text-indigo-600">faster</span>.
             </h1>
             <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-300">
-              Haygrid Systems designs, implements, and operates robust integrations—bridging cloud, data, and enterprise apps with security and observability built in.
+              IT Systems design, implementation, and operations spanning 
+							Haygrid Systems designs, implements, and operates robust integrations—bridging cloud, data, and enterprise apps with security and observability built in.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a href={mailto} className="inline-flex items-center rounded-2xl bg-indigo-600 text-white px-5 py-3 text-sm font-medium hover:bg-indigo-700">Talk to an architect</a>
@@ -121,25 +123,15 @@ export default function HaygridWebsite() {
 
       {/* Contact (no form) */}
       <section id="contact" className="bg-white/60 dark:bg-zinc-900/60 border-t">
-        <div className="mx-auto max-w-7xl px-6 py-16 grid lg:grid-cols-2 gap-10 items-start">
+        <div className="mx-auto max-w-7xl px-6 py-16 grid lg:grid-cols-1 gap-10 items-start">
           <div>
             <h2 className="text-3xl font-semibold tracking-tight">Start your integration</h2>
-            <p className="mt-3 text-zinc-600 dark:text-zinc-300">Tell us about your systems landscape and goals. We'll respond within one business day.</p>
+            <p className="mt-3 text-zinc-600 dark:text-zinc-300">Tell us about your goals. We'll respond within one business day.</p>
             <div className="mt-6 space-y-2 text-sm">
-              <p><strong>Email:</strong> <a className="underline" href={mailto}>contact@haygrid.systems</a></p>
-              <p><strong>Phone:</strong> +1 (555) 555-0134</p>
-              <p><strong>HQ:</strong> San Francisco, CA • Serving clients globally</p>
+              <p><strong>Email:</strong> <a className="underline" href={mailto}>{emailAddress}</a></p>
+              <p><strong>Phone:</strong> +65-91520915</p>
             </div>
             <a href={mailto} className="mt-6 inline-flex items-center rounded-2xl bg-indigo-600 text-white px-5 py-3 text-sm font-medium hover:bg-indigo-700">Email us</a>
-          </div>
-          <div className="rounded-2xl border p-6 bg-white dark:bg-zinc-950 shadow-sm text-sm text-zinc-600 dark:text-zinc-300">
-            <p className="font-medium mb-2">Prefer a quick outline?</p>
-            <ul className="list-disc pl-5 space-y-1">
-              <li>Systems to connect (e.g., ERP ⇄ CRM ⇄ Data Warehouse)</li>
-              <li>Volumes / frequency of sync</li>
-              <li>Security & compliance constraints</li>
-              <li>Target timelines & success criteria</li>
-            </ul>
           </div>
         </div>
       </section>

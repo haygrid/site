@@ -11,7 +11,7 @@ npm run dev
 
 ## Deploy to GitHub Pages
 
-1. Create a repo (e.g. `haygrid-systems-site`) and push this folder.
+1. Create a repo (e.g. `site`) and push this folder.
 2. Ensure `vite.config.js` `base` matches your repo name (e.g. `/site/`).
 3. Build & deploy:
    ```bash
