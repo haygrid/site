@@ -2,8 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function HaygridWebsite() {
-	const emailAddress = "haygridsystems@gmail.com"
+	const emailAddress = "info@haygrid.com"
   const mailto = "mailto:" + emailAddress + "?subject=Consultation%20Request%20—%20Haygrid%20Systems";
+	const phoneNumber = "+65-8095-0315"
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-zinc-950 dark:to-zinc-900 text-zinc-900 dark:text-zinc-100">
@@ -129,7 +130,9 @@ export default function HaygridWebsite() {
             <p className="mt-3 text-zinc-600 dark:text-zinc-300">Tell us about your goals. We'll respond within one business day.</p>
             <div className="mt-6 space-y-2 text-sm">
               <p><strong>Email:</strong> <a className="underline" href={mailto}>{emailAddress}</a></p>
-              <p><strong>Phone:</strong> +65-91520915</p>
+              <p>
+								<strong>Phone:</strong> {phoneNumber}
+							</p>
             </div>
             <a href={mailto} className="mt-6 inline-flex items-center rounded-2xl bg-indigo-600 text-white px-5 py-3 text-sm font-medium hover:bg-indigo-700">Email us</a>
           </div>
