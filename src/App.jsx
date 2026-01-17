@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 export default function HaygridWebsite() {
 	const emailAddress = "info@haygrid.com"
   const mailto = "mailto:" + emailAddress + "?subject=Consultation%20Request%20—%20Haygrid%20Systems";
-	const phoneNumber = "+65-8095-0315"
+	const whatsappNumber = "+65-8095-0315"
+  const whatsappLink = "https://wa.me/6580950315"
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-zinc-950 dark:to-zinc-900 text-zinc-900 dark:text-zinc-100">
@@ -132,9 +133,16 @@ export default function HaygridWebsite() {
             <h2 className="text-3xl font-semibold tracking-tight">Start your integration</h2>
             <p className="mt-3 text-zinc-600 dark:text-zinc-300">Tell us about your goals. We'll respond within one business day.</p>
             <div className="mt-6 space-y-2 text-sm">
-              <p><strong>Email:</strong> <a className="underline" href={mailto}>{emailAddress}</a></p>
-              <p>
-								<strong>Phone:</strong> {phoneNumber}
+              <p className="flex items-center gap-2">
+                <span aria-hidden="true">✉️</span>
+                <strong>Email:</strong> <a className="underline" href={mailto}>{emailAddress}</a>
+              </p>
+              <p className="flex items-center gap-2">
+                <img src="/assets/whatsapp-logo.svg" alt="" aria-hidden="true" className="h-4 w-4" />
+								<strong>WhatsApp:</strong>{" "}
+                <a className="underline" href={whatsappLink} target="_blank" rel="noopener">
+                  {whatsappNumber}
+                </a>
 							</p>
             </div>
             <a href={mailto} className="mt-6 inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500">Email us</a>
