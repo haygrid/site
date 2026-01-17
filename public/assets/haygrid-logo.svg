@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="Haygrid Systems logo">
+  <style>
+    :root {
+      --fg: #111827;
+      --fg2: #374151;
+      --center: #f59e0b;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #ffffff;
+        --fg2: #e5e7eb;
+        --center: #f59e0b;
+      }
+    }
+
+    .tile { fill: var(--fg); }
+    .center { fill: var(--center); }
+  </style>
+
+  <!--
+    ICON GEOMETRY
+    Base icon height = 200
+  -->
+  <g transform="translate(60,50)">
+    <!-- Left column -->
+    <rect class="tile" x="0" y="0"   width="56" height="56"/>
+    <rect class="tile" x="0" y="66"  width="56" height="56"/>
+    <rect class="tile" x="0" y="132" width="56" height="56"/>
+
+    <!-- Right column -->
+    <rect class="tile" x="132" y="0"   width="56" height="56"/>
+    <rect class="tile" x="132" y="66"  width="56" height="56"/>
+    <rect class="tile" x="132" y="132" width="56" height="56"/>
+
+    <!-- Center -->
+    <rect class="center" x="66" y="66" width="56" height="56"/>
+  </g>
+</svg>

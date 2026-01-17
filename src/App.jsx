@@ -11,7 +11,10 @@ export default function HaygridWebsite() {
       {/* Nav */}
       <header className="sticky top-0 z-30 backdrop-blur bg-white/70 dark:bg-zinc-950/50 border-b">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <a href="#home" className="font-semibold tracking-tight text-xl">Haygrid <span className="text-indigo-600">Systems</span></a>
+          <a href="#home" className="flex items-center gap-2 font-semibold tracking-tight text-xl">
+            <img src="/assets/haygrid-logo.svg" alt="" aria-hidden="true" className="h-7 w-7" />
+            <span>Haygrid <span className="text-indigo-600">Systems</span></span>
+          </a>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a className="hover:text-indigo-600" href="#services">Services</a>
             <a className="hover:text-indigo-600" href="#approach">Approach</a>
