@@ -13,36 +13,36 @@ export default function HaygridWebsite() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2 font-semibold tracking-tight text-xl">
             <img src="/assets/haygrid-logo.svg" alt="" aria-hidden="true" className="h-7 w-7" />
-            <span>Haygrid <span className="text-indigo-600">Systems</span></span>
+            <span>Haygrid <span className="text-amber-500">Systems</span></span>
           </a>
           <nav className="hidden md:flex items-center gap-6 text-sm">
-            <a className="hover:text-indigo-600" href="#services">Services</a>
-            <a className="hover:text-indigo-600" href="#approach">Approach</a>
-            <a className="hover:text-indigo-600" href="#industries">Industries</a>
-            <a className="hover:text-indigo-600" href="#contact">Contact</a>
+            <a className="hover:text-amber-500" href="#services">Services</a>
+            <a className="hover:text-amber-500" href="#approach">Approach</a>
+            <a className="hover:text-amber-500" href="#industries">Industries</a>
+            <a className="hover:text-amber-500" href="#contact">Contact</a>
           </nav>
-          <a href={mailto} className="inline-flex items-center rounded-xl border px-4 py-2 text-sm font-medium hover:bg-indigo-50 dark:hover:bg-zinc-800">Request a consult</a>
+          <a href={mailto} className="inline-flex items-center rounded-xl border px-4 py-2 text-sm font-medium hover:bg-amber-50/60 dark:hover:bg-zinc-800">Request a consult</a>
         </div>
       </header>
 
       {/* Hero */}
       <section id="home" className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 pointer-events-none">
-          <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-indigo-300/30 blur-3xl" />
-          <div className="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-indigo-400/20 blur-3xl" />
+          <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-amber-200/30 blur-3xl" />
+          <div className="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-amber-300/20 blur-3xl" />
         </div>
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
           <motion.div initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             {/* Tagline removed as requested */}
             <h1 className="mt-0 text-4xl md:text-5xl font-semibold leading-tight tracking-tight">
-              We connect your <span className="text-indigo-600">systems</span> so your business can move <span className="text-indigo-600">faster</span>.
+              We connect your <span className="text-amber-500">systems</span> so your business can move <span className="text-amber-500">faster</span>.
             </h1>
             <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-300">
               IT Systems design, implementation, and operations spanning 
 							Haygrid Systems designs, implements, and operates robust integrations—bridging cloud, data, and enterprise apps with security and observability built in.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
-              <a href={mailto} className="inline-flex items-center rounded-2xl bg-indigo-600 text-white px-5 py-3 text-sm font-medium hover:bg-indigo-700">Talk to an architect</a>
+              <a href={mailto} className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500">Talk to an architect</a>
               <a href="#services" className="text-sm hover:underline">Explore services</a>
             </div>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
@@ -64,7 +64,7 @@ export default function HaygridWebsite() {
       {/* Services */}
       <section id="services" className="mx-auto max-w-7xl px-6 py-16">
         <div className="mx-auto max-w-3xl text-center mb-10">
-          <div className="inline-block rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-medium text-indigo-700 dark:text-indigo-200 mb-3">What we do</div>
+          <div className="inline-block rounded-full bg-amber-400/10 px-3 py-1 text-sm font-medium text-amber-600 dark:text-amber-200 mb-3">What we do</div>
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">Integration services that scale with you</h2>
           <p className="mt-3 text-zinc-600 dark:text-zinc-300">From discovery to run-state, we deliver secure, observable and maintainable integrations.</p>
         </div>
@@ -80,7 +80,7 @@ export default function HaygridWebsite() {
       <section id="approach" className="bg-white/60 dark:bg-zinc-900/60 border-y">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="mx-auto max-w-3xl text-center mb-10">
-            <div className="inline-block rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-medium text-indigo-700 dark:text-indigo-200 mb-3">How we work</div>
+            <div className="inline-block rounded-full bg-amber-400/10 px-3 py-1 text-sm font-medium text-amber-600 dark:text-amber-200 mb-3">How we work</div>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">A clear, outcomes-first delivery model</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 text-sm">
@@ -137,7 +137,7 @@ export default function HaygridWebsite() {
 								<strong>Phone:</strong> {phoneNumber}
 							</p>
             </div>
-            <a href={mailto} className="mt-6 inline-flex items-center rounded-2xl bg-indigo-600 text-white px-5 py-3 text-sm font-medium hover:bg-indigo-700">Email us</a>
+            <a href={mailto} className="mt-6 inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500">Email us</a>
           </div>
         </div>
       </section>
@@ -162,7 +162,7 @@ export default function HaygridWebsite() {
 const Feature = ({ title, desc, icon }) => (
   <div className="rounded-2xl border bg-white/60 dark:bg-zinc-900/60 p-5 shadow-sm">
     <div className="flex items-start gap-4">
-      <div className="h-10 w-10 flex items-center justify-center rounded-xl bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-200 text-xl">{icon}</div>
+    <div className="h-10 w-10 flex items-center justify-center rounded-xl bg-amber-50 dark:bg-amber-900/30 text-amber-600 dark:text-amber-200 text-xl">{icon}</div>
       <div>
         <h3 className="font-semibold text-lg">{title}</h3>
         <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">{desc}</p>
