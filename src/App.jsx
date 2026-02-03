@@ -97,22 +97,27 @@ export default function HaygridWebsite() {
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="mx-auto max-w-3xl text-center mb-10">
             <div className="inline-block rounded-full bg-amber-400/10 px-3 py-1 text-sm font-medium text-amber-600 dark:text-amber-200 mb-3">How we work</div>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">A clear, outcomes-first delivery model</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">A customer-focused, outcomes-first delivery model</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-6 text-sm">
+          <div className="grid md:grid-cols-4 gap-6 text-sm">
             <div className="rounded-2xl border p-6 bg-white dark:bg-zinc-950">
               <div className="text-3xl">🧭</div>
-              <h3 className="mt-3 font-semibold">1. Discover & Blueprint</h3>
-              <p className="mt-2 text-zinc-600 dark:text-zinc-300">Site walkthrough, needs assessment, security review, and a clear plan.</p>
+              <h3 className="mt-3 font-semibold">1. Understand Needs</h3>
+              <p className="mt-2 text-zinc-600 dark:text-zinc-300">Listen first, assess your space and goals, then define the right scope.</p>
+            </div>
+            <div className="rounded-2xl border p-6 bg-white dark:bg-zinc-950">
+              <div className="text-3xl">🗺️</div>
+              <h3 className="mt-3 font-semibold">2. Plan & Align</h3>
+              <p className="mt-2 text-zinc-600 dark:text-zinc-300">Recommend solutions, confirm priorities, and align on timeline and budget.</p>
             </div>
             <div className="rounded-2xl border p-6 bg-white dark:bg-zinc-950">
               <div className="text-3xl">🚀</div>
-              <h3 className="mt-3 font-semibold">2. Pilot & Prove</h3>
+              <h3 className="mt-3 font-semibold">3. Pilot & Prove</h3>
               <p className="mt-2 text-zinc-600 dark:text-zinc-300">Implement core systems quickly, validate performance and usability.</p>
             </div>
             <div className="rounded-2xl border p-6 bg-white dark:bg-zinc-950">
               <div className="text-3xl">🔁</div>
-              <h3 className="mt-3 font-semibold">3. Scale & Operate</h3>
+              <h3 className="mt-3 font-semibold">4. Scale & Operate</h3>
               <p className="mt-2 text-zinc-600 dark:text-zinc-300">Ongoing maintenance, monitoring, and support as your needs grow.</p>
             </div>
           </div>
