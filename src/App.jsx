@@ -36,18 +36,17 @@ export default function HaygridWebsite() {
           <motion.div initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             {/* Tagline removed as requested */}
             <h1 className="mt-0 text-4xl md:text-5xl font-semibold leading-tight tracking-tight">
-              We connect your <span className="text-amber-500">systems</span> so your business can move <span className="text-amber-500">faster</span>.
+              IT consultation for <span className="text-amber-500">businesses</span> and <span className="text-amber-500">homes</span> — built to be reliable, secure, and simple.
             </h1>
             <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-300">
-              IT Systems design, implementation, and operations spanning 
-							Haygrid Systems designs, implements, and operates robust integrations—bridging cloud, data, and enterprise apps with security and observability built in.
+              From strategy to support, we deliver websites and applications, networks, security, and systems integration — plus backups, automation, and ongoing maintenance.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
-              <a href={mailto} className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500">Talk to an architect</a>
+              <a href={mailto} className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500">Request a consultation</a>
               <a href="#services" className="text-sm hover:underline">Explore services</a>
             </div>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
-              {["5-day integration assessment", "Fixed-scope pilots", "Runbook handover"].map((t) => (
+              {["Business & home consultations", "Build + maintain plans", "Security-first systems"].map((t) => (
                 <span key={t} className="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-zinc-600 dark:text-zinc-300">✓ {t}</span>
               ))}
             </div>
@@ -66,14 +65,30 @@ export default function HaygridWebsite() {
       <section id="services" className="mx-auto max-w-7xl px-6 py-16">
         <div className="mx-auto max-w-3xl text-center mb-10">
           <div className="inline-block rounded-full bg-amber-400/10 px-3 py-1 text-sm font-medium text-amber-600 dark:text-amber-200 mb-3">What we do</div>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">Integration services that scale with you</h2>
-          <p className="mt-3 text-zinc-600 dark:text-zinc-300">From discovery to run-state, we deliver secure, observable and maintainable integrations.</p>
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">Practical IT services for businesses and homes</h2>
+          <p className="mt-3 text-zinc-600 dark:text-zinc-300">Consulting, build-outs, and ongoing support for secure, maintainable systems that fit your space and your goals.</p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <Feature icon="🛠️" title="Systems Integration" desc="Connect ERPs, CRMs, data platforms and on-prem/edge systems with robust, secure flows." />
-          <Feature icon="⚙️" title="Process Automation" desc="Streamline workflows and eliminate swivel-chair ops across teams and tools." />
-          <Feature icon="🛡️" title="Governance & Compliance" desc="Identity, audit and policy guardrails baked into every environment." />
-          <Feature icon="📈" title="Observability" desc="Dashboards, tracing and alerting so your data paths are measurable and dependable." />
+        <div className="grid md:grid-cols-2 gap-8 mb-3">
+          <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Build</h3>
+          <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Operate</h3>
+        </div>
+        <div className="space-y-4">
+          <div className="grid md:grid-cols-2 gap-4">
+            <Feature icon="🧭" title="Consultation & Planning" desc="Technology assessments, site surveys, budgeting, and security posture reviews." />
+            <Feature icon="🛡️" title="Physical + Virtual Security" desc="Cameras, access control, alarm integration, MFA, and device protection." />
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Feature icon="🌐" title="Websites & Applications" desc="Website and app builds, hosting, domains, SSL, and ongoing maintenance." />
+            <Feature icon="⚡" title="Automation & Productivity" desc="Workflow automation, scheduled tasks, and alerting." />
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Feature icon="📡" title="Networks & Connectivity" desc="Network design, Wi‑Fi optimization, switching, routing, and internet failover." />
+            <Feature icon="💾" title="Data Protection & Continuity" desc="Backups, disaster recovery planning, and data migration." />
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Feature icon="🔗" title="Systems Integration" desc="Smart business/home, apps, and device/IoT integration." />
+            <Feature icon="🧰" title="Ongoing Support" desc="Managed services, help desk support, and lifecycle management." />
+          </div>
         </div>
       </section>
 
@@ -88,17 +103,17 @@ export default function HaygridWebsite() {
             <div className="rounded-2xl border p-6 bg-white dark:bg-zinc-950">
               <div className="text-3xl">🧭</div>
               <h3 className="mt-3 font-semibold">1. Discover & Blueprint</h3>
-              <p className="mt-2 text-zinc-600 dark:text-zinc-300">Landscape review, integration map, security posture, success metrics.</p>
+              <p className="mt-2 text-zinc-600 dark:text-zinc-300">Site walkthrough, needs assessment, security review, and a clear plan.</p>
             </div>
             <div className="rounded-2xl border p-6 bg-white dark:bg-zinc-950">
               <div className="text-3xl">🚀</div>
               <h3 className="mt-3 font-semibold">2. Pilot & Prove</h3>
-              <p className="mt-2 text-zinc-600 dark:text-zinc-300">Ship a thin slice to production quickly, validate value and reliability.</p>
+              <p className="mt-2 text-zinc-600 dark:text-zinc-300">Implement core systems quickly, validate performance and usability.</p>
             </div>
             <div className="rounded-2xl border p-6 bg-white dark:bg-zinc-950">
               <div className="text-3xl">🔁</div>
               <h3 className="mt-3 font-semibold">3. Scale & Operate</h3>
-              <p className="mt-2 text-zinc-600 dark:text-zinc-300">Handover runbooks, dashboards, and train your team for sustainable ops.</p>
+              <p className="mt-2 text-zinc-600 dark:text-zinc-300">Ongoing maintenance, monitoring, and support as your needs grow.</p>
             </div>
           </div>
         </div>
@@ -110,15 +125,15 @@ export default function HaygridWebsite() {
           <div>
             <h3 className="text-2xl font-semibold">Industries</h3>
             <ul className="mt-4 grid sm:grid-cols-2 gap-3 text-sm">
-              {["Retail & E-commerce","High-Tech & SaaS","Logistics & Supply Chain","Manufacturing","Financial Services","Public Sector"].map((i)=> (
+              {["Home Offices","Small Business","Retail & Hospitality","Professional Services","Real Estate","Public Sector"].map((i)=> (
                 <li key={i} className="rounded-xl border px-4 py-3 bg-white/60 dark:bg-zinc-900/60">{i}</li>
               ))}
             </ul>
           </div>
           <div>
-            <h3 className="text-2xl font-semibold">Platforms we work with</h3>
+            <h3 className="text-2xl font-semibold">Systems we support</h3>
             <div className="mt-4 grid sm:grid-cols-2 gap-3 text-sm">
-              {["AWS • Azure • GCP","Kubernetes • Docker","Kafka • RabbitMQ • SQS","Snowflake • BigQuery • Databricks","dbt • Airflow • Dagster","Salesforce • Netsuite • SAP • Workday","OIDC • SSO • SCIM"].map((s)=> (
+              {["Home & office networks","Wi‑Fi, switches, and routing","Cameras, sensors, and access control","Websites, domains, and email","Servers, NAS, and backups","Cloud and on‑prem apps","Automation and monitoring"].map((s)=> (
                 <div key={s} className="rounded-xl border px-4 py-3 bg-white/60 dark:bg-zinc-900/60">{s}</div>
               ))}
             </div>
@@ -130,8 +145,8 @@ export default function HaygridWebsite() {
       <section id="contact" className="bg-white/60 dark:bg-zinc-900/60 border-t">
         <div className="mx-auto max-w-7xl px-6 py-16 grid lg:grid-cols-1 gap-10 items-start">
           <div>
-            <h2 className="text-3xl font-semibold tracking-tight">Start your integration</h2>
-            <p className="mt-3 text-zinc-600 dark:text-zinc-300">Tell us about your goals. We'll respond within one business day.</p>
+            <h2 className="text-3xl font-semibold tracking-tight">Start your consultation</h2>
+            <p className="mt-3 text-zinc-600 dark:text-zinc-300">Tell us about your business or home needs. We'll respond within one business day.</p>
             <div className="mt-6 space-y-2 text-sm">
               <p className="flex items-center gap-2">
                 <span aria-hidden="true">✉️</span>
