@@ -1,7 +1,6 @@
 node_modules
-dist
 .DS_Store
-.vite
+.next
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

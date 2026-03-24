@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 export default function HaygridWebsite() {
 	const emailAddress = "info@haygrid.com"
@@ -33,7 +32,7 @@ export default function HaygridWebsite() {
           <div className="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-amber-300/20 blur-3xl" />
         </div>
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
-          <motion.div initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
+          <div>
             {/* Tagline removed as requested */}
             <h1 className="mt-0 text-4xl md:text-5xl font-semibold leading-tight tracking-tight">
               IT consultation for <span className="text-amber-500">businesses</span> and <span className="text-amber-500">homes</span> — built to be reliable, secure, and simple.
@@ -50,14 +49,14 @@ export default function HaygridWebsite() {
                 <span key={t} className="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-zinc-600 dark:text-zinc-300">✓ {t}</span>
               ))}
             </div>
-          </motion.div>
-          <motion.div initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }}>
+          </div>
+          <div>
             <img
               src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
               alt="Team working on systems integration"
               className="rounded-2xl shadow-lg border object-cover"
             />
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -187,7 +186,7 @@ export default function HaygridWebsite() {
 }
 
 // Local Feature component used in Services
-const Feature = ({ title, desc, icon }) => (
+const Feature = ({ title, desc, icon }: { title: string; desc: string; icon: string }) => (
   <div className="rounded-2xl border bg-white/60 dark:bg-zinc-900/60 p-5 shadow-sm">
     <div className="flex items-start gap-4">
     <div className="h-10 w-10 flex items-center justify-center rounded-xl bg-amber-50 dark:bg-amber-900/30 text-amber-600 dark:text-amber-200 text-xl">{icon}</div>
