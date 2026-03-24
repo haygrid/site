@@ -67,25 +67,19 @@ export default function HaygridWebsite() {
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">Practical IT services for businesses and homes</h2>
           <p className="mt-3 text-zinc-600 dark:text-zinc-300">Consulting, build-outs, and ongoing support for secure, maintainable systems that fit your space and your goals.</p>
         </div>
-        <div className="grid md:grid-cols-2 gap-8 mb-3">
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Build</h3>
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Operate</h3>
-        </div>
-        <div className="space-y-4">
-          <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Build</h3>
             <Feature icon="🧭" title="Consultation & Planning" desc="Technology assessments, site surveys, budgeting, and security posture reviews." />
-            <Feature icon="🛡️" title="Physical + Virtual Security" desc="Cameras, access control, alarm integration, MFA, and device protection." />
-          </div>
-          <div className="grid md:grid-cols-2 gap-4">
             <Feature icon="🌐" title="Websites & Applications" desc="Website and app builds, hosting, domains, SSL, and ongoing maintenance." />
-            <Feature icon="⚡" title="Automation & Productivity" desc="Workflow automation, scheduled tasks, and alerting." />
-          </div>
-          <div className="grid md:grid-cols-2 gap-4">
             <Feature icon="📡" title="Networks & Connectivity" desc="Network design, Wi‑Fi optimization, switching, routing, and internet failover." />
-            <Feature icon="💾" title="Data Protection & Continuity" desc="Backups, disaster recovery planning, and data migration." />
-          </div>
-          <div className="grid md:grid-cols-2 gap-4">
             <Feature icon="🔗" title="Systems Integration" desc="Smart business/home, apps, and device/IoT integration." />
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Operate</h3>
+            <Feature icon="🛡️" title="Physical + Virtual Security" desc="Cameras, access control, alarm integration, MFA, and device protection." />
+            <Feature icon="⚡" title="Automation & Productivity" desc="Workflow automation, scheduled tasks, and alerting." />
+            <Feature icon="💾" title="Data Protection & Continuity" desc="Backups, disaster recovery planning, and data migration." />
             <Feature icon="🧰" title="Ongoing Support" desc="Managed services, help desk support, and lifecycle management." />
           </div>
         </div>
