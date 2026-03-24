@@ -186,7 +186,7 @@ export default function HaygridWebsite() {
 }
 
 // Local Feature component used in Services
-const Feature = ({ title, desc, icon }) => (
+const Feature = ({ title, desc, icon }: { title: string; desc: string; icon: string }) => (
   <div className="rounded-2xl border bg-white/60 dark:bg-zinc-900/60 p-5 shadow-sm">
     <div className="flex items-start gap-4">
     <div className="h-10 w-10 flex items-center justify-center rounded-xl bg-amber-50 dark:bg-amber-900/30 text-amber-600 dark:text-amber-200 text-xl">{icon}</div>

@@ -5,7 +5,7 @@ export const metadata = {
   description: 'IT consultation for businesses and homes — built to be reliable, secure, and simple.',
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
