@@ -1,6 +1,6 @@
 # Haygrid Systems — Website
 
-A simple marketing site built with Vite + React + Tailwind, ready for GitHub Pages.
+A static marketing site built with Next.js + Tailwind, deployed to GitHub Pages via static export.
 
 ## Local dev
 
@@ -11,13 +11,18 @@ npm run dev
 
 ## Deploy to GitHub Pages
 
-1. Create a repo (e.g. `site`) and push this folder.
-2. Ensure `vite.config.js` `base` matches your repo name (e.g. `/site/`).
-3. Build & deploy:
+1. Push this repo to GitHub.
+2. Build the static export:
    ```bash
    npm run build
-   npm run deploy
    ```
-4. In GitHub → **Settings** → **Pages** → Source: **Deploy from a branch** → Branch: `gh-pages`.
+   This outputs the static site to the `docs/` directory.
+3. Commit and push `docs/`:
+   ```bash
+   git add docs/
+   git commit -m "Build"
+   git push
+   ```
+4. In GitHub → **Settings** → **Pages** → Source: **Deploy from a branch** → Branch: `main` (or your branch), folder: `/docs`.
 
 The site will be available at `https://<your-username>.github.io/<repo>/`.
