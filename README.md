@@ -25,4 +25,4 @@ npm run dev
    ```
 4. In GitHub → **Settings** → **Pages** → Source: **Deploy from a branch** → Branch: `main` (or your branch), folder: `/docs`.
 
-The site will be available at `https://<your-username>.github.io/<repo>/`.
+The site is available at https://www.haygrid.com.
