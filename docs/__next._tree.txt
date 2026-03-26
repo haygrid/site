@@ -2,4 +2,4 @@
 :HL["/assets/haygrid-logo.svg","image"]
 :HL["https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80","image"]
 :HL["/assets/whatsapp-logo.svg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"2hfSFhoP5slBxMOLnVKeh"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"duzT_0yKGEzNW8p4X0dpD"}
