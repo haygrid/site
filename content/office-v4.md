@@ -41,8 +41,8 @@ All packages include the equipment required for your office, along with installa
 ### Office Core
 For very small teams with simple connectivity needs and no complex access or security requirements.
 
-- Network and WiFi setup
-- Core system configuration
+* Network and WiFi setup
+* Core system configuration
 
 Typical projects range between **$3,000 – $6,000**
 Ongoing support plans typically start from **$100/month**
@@ -51,13 +51,13 @@ Ongoing support plans typically start from **$100/month**
 ---
 
 ### Office Pro ⭐
-For most SMBs — teams that depend on their systems daily, handle sensitive data, or need clear structure across their access and operations.
+For most SMBs - teams that depend on their systems daily, handle sensitive data, or need clear structure across their access and operations.
 
-- Full network infrastructure
-- Structured system design based on criticality
-- Integrated physical and system access control
-- Data protection and backup
-- Integrated systems for daily operations
+* Full network infrastructure
+* Structured system design based on criticality
+* Integrated physical and system access control
+* Data protection and backup
+* Integrated systems for daily operations
 
 Typical projects range between **$6,000 – $15,000**
 Ongoing support plans typically start from **$300/month**
@@ -68,10 +68,10 @@ Ongoing support plans typically start from **$300/month**
 ### Office Enterprise
 For larger offices, multi-site setups, or businesses with more demanding security, redundancy, or compliance requirements.
 
-- Advanced network and segmentation
-- Enhanced security and redundancy
-- Multi-site or scalable setups
-- Extended monitoring and support
+* Advanced network and segmentation
+* Enhanced security and redundancy
+* Multi-site or scalable setups
+* Extended monitoring and support
 
 Typical projects range between **$15,000 – $40,000+**
 Ongoing support plans typically start from **$500/month**
@@ -81,9 +81,9 @@ Ongoing support plans typically start from **$500/month**
 
 ## One partner, from design to support
 
-Most businesses manage their technology through a mix of vendors — one for the network, another for security, someone else for support. When something goes wrong, accountability gets lost between them.
+Most businesses manage their technology through a mix of vendors - one for the network, another for security, someone else for support. When something goes wrong, accountability gets lost between them.
 
-We design, build, and support your entire setup as one team. That means a single point of contact, full visibility across every system, and nobody to pass the blame.
+We design, build, and support your entire setup as one team. That means a single point of contact, full visibility across every system, and clear accountability.
 
 After the build is complete, we stay involved — monitoring your systems, applying security and firmware updates, resolving issues remotely before they affect your team, and adapting your setup as your business grows.
 

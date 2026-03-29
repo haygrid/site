@@ -4,7 +4,7 @@ Most integrators build and leave.
 
 Once the work is done, the system becomes your responsibility — to monitor, maintain, and troubleshoot. When something goes wrong, you're either calling someone who no longer knows your setup, or figuring it out yourself.
 
-We stay involved after the installation is complete. That's not an add-on — it's how we work.
+We stay involved after the installation is complete. That's not an add-on. It's how we work.
 
 → Plan your setup
 

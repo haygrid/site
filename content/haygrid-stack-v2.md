@@ -2,7 +2,7 @@
 
 Most technology problems aren't caused by bad components.
 
-They're caused by components that were never designed to work together — chosen separately, configured independently, and left to figure out the gaps on their own.
+They're caused by components that were never designed to work together - chosen separately, configured independently, and left to figure out the gaps on their own.
 
 The Haygrid Stack is our answer to that problem: a proven set of components and system designs, tested across real environments, built to work together from day one.
 
@@ -17,7 +17,7 @@ The Haygrid Stack is a curated set of components and system designs built up thr
 
 Instead of selecting components from scratch each time, we start from combinations we already know work — and configure them for your specific space. This removes the guesswork from what is otherwise a process of trial and error.
 
-The result is a setup that behaves predictably, integrates cleanly, and stays stable over time — not because we got lucky, but because we've done it before.
+The result is a setup that behaves predictably, integrates cleanly, and stays stable over time - not because we got lucky, but because we've done it before.
 
 
 ---

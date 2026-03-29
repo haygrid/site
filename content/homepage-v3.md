@@ -32,7 +32,7 @@ Ongoing support plans typically start from **$100/month**
 ### Retail & F&B
 Uptime when you're open. Security when you're not.
 
-A dropped transaction is lost revenue. A blind spot is an open invitation for theft. We design retail systems that keep operations stable during trading hours — and your store protected after closing.
+Dropped transactions mean lost revenue, and CCTV blind spots leave your store exposed to theft. We design retail systems that keep operations stable during trading hours and your store protected after closing.
 
 Typical projects range between **$4,000 – $30,000+**
 Ongoing support plans typically start from **$300/month**
@@ -41,7 +41,7 @@ Ongoing support plans typically start from **$300/month**
 ### Homes
 Invisible by design. Present when you need it.
 
-No visible cables. No cluttered equipment. Technology built into your home rather than added to it — seamless to live with, simple to use.
+No visible cables. No cluttered equipment. Technology built into your home rather than added to it - seamless to live with, simple to use.
 
 Typical projects range between **$2,500 – $15,000+**
 Ongoing support plans typically start from **$30/month**

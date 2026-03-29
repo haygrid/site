@@ -55,9 +55,9 @@ All packages include the required equipment, installation, and configuration —
 ### Retail Essential
 For very small shops or kiosks with basic connectivity and minimal security requirements.
 
-- Network and WiFi setup
-- POS-ready configuration
-- Basic CCTV system
+* Network and WiFi setup
+* POS-ready configuration
+* Basic CCTV system
 
 Typical projects range between **$4,000 – $7,000**
 Ongoing support plans typically start from **$300/month**
@@ -66,13 +66,13 @@ Ongoing support plans typically start from **$300/month**
 ---
 
 ### Retail Secure ⭐
-For most retail and F&B operators — stores that handle daily transactions, need full CCTV coverage, and want controlled access.
+For most retail and F&B operators - stores that handle daily transactions, need full CCTV coverage, and want controlled access.
 
-- Full network with traffic separation
-- POS-optimized setup
-- CCTV system with full coverage
-- Access control for secure entry
-- Storage and backup
+* Full network with traffic separation
+* POS-optimized setup
+* CCTV system with full coverage
+* Access control for secure entry
+* Storage and backup
 
 Typical projects range between **$7,000 – $15,000**
 Ongoing support plans typically start from **$300/month**
@@ -83,11 +83,11 @@ Ongoing support plans typically start from **$300/month**
 ### Retail Pro
 For larger stores, multi-outlet operations, or higher-risk environments needing advanced coverage and redundancy.
 
-- Multi-zone CCTV coverage
-- Advanced access control systems
-- Alarm integration
-- Backup connectivity options
-- Enhanced monitoring and redundancy
+* Multi-zone CCTV coverage
+* Advanced access control systems
+* Alarm integration
+* Backup connectivity options
+* Enhanced monitoring and redundancy
 
 Typical projects range between **$15,000 – $30,000+**
 Ongoing support plans typically start from **$500/month**
@@ -97,9 +97,9 @@ Ongoing support plans typically start from **$500/month**
 
 ## One partner, from design to support
 
-Most retailers and F&B operators manage their technology through a mix of vendors — one for the network, another for CCTV, someone else for support. When something goes wrong, accountability gets lost between them.
+Most retailers and F&B operators manage their technology through a mix of vendors - one for the network, another for CCTV, someone else for support. When something goes wrong, accountability gets lost between them.
 
-We design, build, and support your entire setup as one team. That means a single point of contact, full visibility across every system, and nobody to pass the blame.
+We design, build, and support your entire setup as one team. That means a single point of contact, full visibility across every system, and clear accountability.
 
 After the build is complete, we stay involved — monitoring your systems, applying security and firmware updates, resolving issues remotely before they affect your operations, and adapting your setup as your store grows.
 

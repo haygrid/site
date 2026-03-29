@@ -40,8 +40,8 @@ All packages include the equipment required for your home, along with installati
 ### Home Essential
 For homeowners who need clean, reliable connectivity. Smart home not included.
 
-- WiFi coverage across key areas
-- Core system setup
+* WiFi coverage across key areas
+* Core system setup
 
 Typical projects range between **$2,500 – $4,500**
 Ongoing support plans typically start from **$30/month**
@@ -50,11 +50,11 @@ Ongoing support plans typically start from **$30/month**
 ---
 
 ### Home Complete ⭐
-For most homes — full connectivity, integrated smart home, and security, ready from day one.
+For most homes - full connectivity, integrated smart home, and security, ready from day one.
 
-- Full-home WiFi coverage
-- Integrated smart home setup
-- Security system setup
+* Full-home WiFi coverage
+* Integrated smart home setup
+* Security system setup
 
 Typical projects range between **$3,500 – $8,000**
 Ongoing support plans typically start from **$50/month**
@@ -63,11 +63,11 @@ Ongoing support plans typically start from **$50/month**
 ---
 
 ### Home Plus
-For larger homes or more advanced setups — multi-zone coverage, enhanced smart home integration, and expanded security.
+For larger homes or more advanced setups - multi-zone coverage, enhanced smart home integration, and expanded security.
 
-- Multi-zone coverage
-- Enhanced smart home integration
-- Expanded security setup
+* Multi-zone coverage
+* Enhanced smart home integration
+* Expanded security setup
 
 Typical projects range between **$8,000 – $15,000+**
 Ongoing support plans typically start from **$100/month**
@@ -77,9 +77,9 @@ Ongoing support plans typically start from **$100/month**
 
 ## One partner, from design to support
 
-Most homeowners piece their technology together across multiple providers — one for WiFi, another for smart home, someone else for security. When something doesn't work, nobody takes responsibility.
+Most homeowners piece their technology together across multiple providers - one for WiFi, another for smart home, someone else for security. When something doesn't work, nobody takes responsibility.
 
-We design, build, and support your entire home setup as one team. That means a single point of contact, full visibility across every system, and nobody to pass the blame.
+We design, build, and support your entire home setup as one team. That means a single point of contact, full visibility across every system, and clear accountability.
 
 After the build is complete, we stay involved — monitoring your systems, keeping firmware and security current, and resolving issues remotely so they never interrupt how you live. Your home stays the way it was designed to work.
 
