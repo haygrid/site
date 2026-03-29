@@ -58,7 +58,7 @@ export default function ContactForm() {
     return (
       <div className="text-center py-8">
         <div className="text-3xl mb-3">✓</div>
-        <p className="font-semibold text-lg">Thanks — we'll be in touch shortly.</p>
+        <p className="font-semibold text-lg">Thanks. We'll be in touch shortly.</p>
         <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">We'll review your details and get back to you within one business day.</p>
       </div>
     );

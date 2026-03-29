@@ -17,7 +17,7 @@ export default function ContactPage() {
           Tell us about your space
         </h1>
         <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed">
-          Whether you're planning a new setup, mid-renovation, or looking to improve what you already have — share a few details and we'll take it from there.
+          Whether you're planning a new setup, mid-renovation, or looking to improve what you already have: share a few details and we'll take it from there.
         </p>
         <p className="mt-2 text-zinc-500 dark:text-zinc-400 text-sm">
           We'll get back to you within one business day.

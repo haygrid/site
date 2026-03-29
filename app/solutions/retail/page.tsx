@@ -12,16 +12,16 @@ export default function RetailPage() {
       <section className="mx-auto max-w-7xl px-6 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
         <div>
           <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">
-            Retail systems that keep your store running — and protected
+            Retail systems that keep your store running and protected
           </h1>
           <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed">
             During trading hours, your network is your lifeline. A dropped connection means failed transactions, a stalled floor, and frustrated customers walking out.
           </p>
           <p className="mt-3 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            When you close for the night, the risks don't stop — they shift. Without the right systems in place, your store is exposed: no visibility, no deterrence, and no record if something goes wrong.
+            When you close for the night, the risks don't stop; they shift. Without the right systems in place, your store is exposed: no visibility, no deterrence, and no record if something goes wrong.
           </p>
           <p className="mt-3 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            We design integrated systems for retail and F&B operators — built to keep operations running under pressure, and your store protected around the clock.
+            We design integrated systems for retail and F&B operators - built to keep operations running under pressure, and your store protected around the clock.
           </p>
           <div className="mt-6">
             <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
@@ -44,7 +44,7 @@ export default function RetailPage() {
       <section className="bg-white/60 dark:bg-zinc-900/60 border-y border-zinc-200 dark:border-zinc-800">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mb-10">
-            Designed for every hour you're open — and every hour you're not
+            Designed for every hour you're open and every hour you're not
           </h2>
           <div className="grid md:grid-cols-2 gap-10">
             {/* Retail */}
@@ -54,7 +54,7 @@ export default function RetailPage() {
                 <div>
                   <h4 className="font-semibold text-sm mb-1">Keep transactions running</h4>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                    Retail networks need to be segmented — POS, staff, guest, and CCTV all on separate traffic — so a problem in one area never brings down another. Transactions stay stable regardless of what else is happening on the network.
+                    We segment retail networks - POS, staff, guest, and CCTV on separate traffic - so a problem in one area never brings down another. Transactions stay stable regardless of what else is happening on the network.
                   </p>
                 </div>
                 <div>
@@ -66,7 +66,7 @@ export default function RetailPage() {
                 <div>
                   <h4 className="font-semibold text-sm mb-1">Secure access and protect after hours</h4>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                    We implement access control that restricts and logs entry — limiting who can access stockrooms, back offices, and the premises after closing. Your systems stay on watch even when you're not there.
+                    We implement access control that restricts and logs entry - limiting who can access stockrooms, back offices, and the premises after closing. Your systems stay on watch even when you're not there.
                   </p>
                 </div>
               </div>
@@ -79,19 +79,19 @@ export default function RetailPage() {
                 <div>
                   <h4 className="font-semibold text-sm mb-1">Keep orders and payments moving</h4>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                    Your ordering systems, payment terminals, and kitchen displays all depend on the same network. We design and segment your infrastructure so each system operates independently — a table management issue never takes down your POS.
+                    Your ordering systems, payment terminals, and kitchen displays all depend on the same network. We design and segment your infrastructure so each system operates independently: a table management issue never takes down your POS.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-sm mb-1">Maintain visibility across the floor and kitchen</h4>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                    CCTV in F&B isn't just about security — it's operational visibility. We design coverage across front-of-house, kitchen entry points, and cash handling areas.
+                    CCTV in F&B covers both security and operational visibility. We design coverage across front-of-house, kitchen entry points, and cash handling areas.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-sm mb-1">Secure access and protect after hours</h4>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                    Access control, entry logs, and systems that stay active when the last staff member leaves — so your premises stay protected through the night.
+                    Access control, entry logs, and systems that stay active when the last staff member leaves, so your premises stay protected through the night.
                   </p>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export default function RetailPage() {
         <div className="rounded-2xl border border-amber-200 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-900/10 p-8 max-w-2xl">
           <h2 className="text-xl font-semibold mb-3">Built on the Haygrid Stack</h2>
           <p className="text-zinc-600 dark:text-zinc-300 text-sm leading-relaxed">
-            Every retail and F&B setup we design is built on the Haygrid Stack — a proven combination of components selected and configured to work together reliably. This means fewer compatibility issues, more predictable performance, and a setup that stays stable over time.
+            We build every retail and F&B setup on the Haygrid Stack - a proven combination of components configured to work together reliably. This means fewer compatibility issues, more predictable performance, and a setup that stays stable over time.
           </p>
           <p className="mt-4">
             <Link href="/advantage/stack" className="text-amber-500 hover:text-amber-600 font-medium text-sm transition-colors">
@@ -120,7 +120,7 @@ export default function RetailPage() {
         <div className="mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mb-2">Packages</h2>
           <p className="text-zinc-600 dark:text-zinc-400 text-sm mb-8">
-            All packages include the required equipment, installation, and configuration — delivered as a complete, ready-to-use system.
+            All packages include the required equipment, installation, and configuration, delivered as a complete, ready-to-use system.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {/* Retail Essential */}
@@ -142,7 +142,7 @@ export default function RetailPage() {
             <div className="rounded-2xl border-2 border-amber-400 dark:border-amber-500 bg-white dark:bg-zinc-900 p-6 relative">
               <div className="absolute -top-3 left-4 bg-amber-400 text-white text-xs font-semibold px-3 py-1 rounded-full">Recommended</div>
               <h3 className="font-semibold text-lg">Retail Secure</h3>
-              <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">For most retail and F&B operators — stores that handle daily transactions, need full CCTV coverage, and want controlled access.</p>
+              <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">For most retail and F&B operators - stores that handle daily transactions, need full CCTV coverage, and want controlled access.</p>
               <ul className="mt-4 space-y-1 text-sm text-zinc-600 dark:text-zinc-300">
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Full network with traffic separation</li>
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>POS-optimized setup</li>
@@ -183,13 +183,13 @@ export default function RetailPage() {
           Most retailers and F&B operators manage their technology through a mix of vendors — one for the network, another for CCTV, someone else for support. When something goes wrong, accountability gets lost between them.
         </p>
         <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-          We design, build, and support your entire setup as one team. That means a single point of contact, full visibility across every system, and nobody to pass the blame.
+          We design, build, and support your entire setup as one team. That means a single point of contact, full visibility across every system, and clear accountability.
         </p>
         <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-          After the build is complete, we stay involved — monitoring your systems, applying security and firmware updates, resolving issues remotely before they affect your operations, and adapting your setup as your store grows.
+          After the build is complete, we stay involved - monitoring your systems, applying security and firmware updates, resolving issues remotely before they affect your operations, and adapting your setup as your store grows.
         </p>
         <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-          We also work with you before installation begins — planning your infrastructure and system placement alongside your renovation or fitout, so everything is built in properly from the start.
+          We also work with you before installation begins - planning your infrastructure and system placement alongside your renovation or fitout, so we build everything in properly from the start.
         </p>
         <div className="mt-6 space-y-2">
           <p><Link href="/advantage/renovation" className="text-amber-500 hover:text-amber-600 font-medium transition-colors">→ Learn about renovation integration</Link></p>

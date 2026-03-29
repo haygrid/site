@@ -17,10 +17,10 @@ export default function SupportPage() {
           Most integrators build and leave.
         </p>
         <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-          Once the work is done, the system becomes your responsibility — to monitor, maintain, and troubleshoot. When something goes wrong, you're either calling someone who no longer knows your setup, or figuring it out yourself.
+          Once the work is done, the system becomes your responsibility: to monitor, maintain, and troubleshoot. When something goes wrong, you're either calling someone who no longer knows your setup, or figuring it out yourself.
         </p>
         <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-          We stay involved after the installation is complete. That's not an add-on — it's how we work.
+          We stay involved after the installation is complete.
         </p>
         <div className="mt-6">
           <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
@@ -37,10 +37,10 @@ export default function SupportPage() {
             A well-built system doesn't stay that way on its own.
           </p>
           <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            Firmware falls behind security standards. Configurations drift after power events or software updates. Devices age past their reliable lifespan without anyone noticing. Security gaps appear quietly — and are rarely discovered until something goes wrong.
+            Firmware falls behind security standards. Configurations drift after power events or software updates. Devices age past their reliable lifespan without anyone noticing. Security gaps appear quietly and rarely surface until something goes wrong.
           </p>
           <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            The systems that fail most visibly are usually the ones that were well-designed at the start, then left without maintenance.
+            Systems that fail most visibly usually started well but never received ongoing maintenance.
           </p>
         </div>
       </section>
@@ -52,7 +52,7 @@ export default function SupportPage() {
           <div className="rounded-2xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-6">
             <h3 className="font-semibold mb-2">Proactive monitoring</h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              We monitor your system continuously — network health, device status, and security signals. Most issues are caught and resolved before they're visible to anyone using the space.
+              We monitor your system continuously - network health, device status, and security signals. We catch and resolve most issues before they're visible to anyone using the space.
             </p>
           </div>
           <div className="rounded-2xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-6">
@@ -70,13 +70,13 @@ export default function SupportPage() {
           <div className="rounded-2xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-6">
             <h3 className="font-semibold mb-2">On-site support</h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              When remote fixes aren't enough, we come to you — with full context on your setup already in hand. No explaining your system from scratch, no waiting for someone to get up to speed.
+              When remote fixes aren't enough, we come to you - already familiar with your setup, so there's no time lost explaining from scratch.
             </p>
           </div>
           <div className="rounded-2xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-6">
             <h3 className="font-semibold mb-2">Growth and change support</h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              When your space or requirements evolve — a new office floor, additional staff, a renovation, new devices — we adapt your system to match. You don't have to start over or find someone new.
+              When your space or requirements evolve - a new office floor, additional staff, a renovation, new devices - we adapt your system to match.
             </p>
           </div>
         </div>
@@ -87,10 +87,10 @@ export default function SupportPage() {
         <div className="mx-auto max-w-3xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">How it works</h2>
           <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            Ongoing support plans run monthly and are scoped to your setup. We stay connected to your system remotely, respond when issues arise, and check in periodically to make sure everything is performing as it should.
+            Ongoing support plans run monthly, scoped to your setup. We stay connected to your system remotely, respond when issues arise, and check in periodically to make sure everything is performing as it should.
           </p>
           <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            Support is available across all three spaces — offices, retail and F&B, and homes — and is included as an option with every package we deliver.
+            Support is available across all three spaces - offices, retail and F&B, and homes - and is included as an option with every package we deliver.
           </p>
         </div>
       </section>

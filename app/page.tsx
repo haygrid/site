@@ -20,7 +20,7 @@ export default function HomePage() {
               One integrated setup. Built for your space.
             </h1>
             <p className="mt-4 text-lg text-zinc-200">
-              Your network, security, devices, and smart home — designed to work together from day one.
+              Your network, security, devices, and smart home, designed to work together from day one.
             </p>
             <div className="mt-6">
               <Link
@@ -41,10 +41,10 @@ export default function HomePage() {
             Designed differently from typical IT setups
           </h2>
           <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            Most setups are assembled piece by piece — different vendors, different components, often without a clear structure. The result is systems that don't work well together, gaps that are hard to diagnose, and setups that get harder to manage over time.
+            Most setups come together piece by piece - different vendors, different components, often without a clear structure. The result is systems that don't work well together, gaps that are hard to diagnose, and setups that get harder to manage over time.
           </p>
           <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            We take a different approach. Every setup we design starts from the Haygrid Stack — a proven combination of components built to work together. The result is a single integrated setup, designed specifically for your space, that works reliably from day one.
+            Every setup we design starts from the Haygrid Stack - a proven combination of components built to work together. The result is a single integrated setup, designed specifically for your space, that works reliably from day one.
           </p>
           <p className="mt-6">
             <Link href="/advantage/stack" className="text-amber-500 hover:text-amber-600 font-medium transition-colors">
@@ -88,7 +88,7 @@ export default function HomePage() {
               Uptime when you're open. Security when you're not.
             </p>
             <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              A dropped transaction is lost revenue. A blind spot is an open invitation for theft. We design retail systems that keep operations stable during trading hours — and your store protected after closing.
+              Dropped transactions mean lost revenue, and CCTV blind spots leave your store exposed to theft. We design retail systems that keep operations stable during trading hours and your store protected after closing.
             </p>
             <div className="mt-4 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
               <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$4,000 – $30,000+</strong></p>
@@ -106,7 +106,7 @@ export default function HomePage() {
               Invisible by design. Present when you need it.
             </p>
             <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              No visible cables. No cluttered equipment. Technology built into your home rather than added to it — seamless to live with, simple to use.
+              No visible cables. No cluttered equipment. Technology built into your home rather than added to it - seamless to live with, simple to use.
             </p>
             <div className="mt-4 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
               <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$2,500 – $15,000+</strong></p>
@@ -123,10 +123,10 @@ export default function HomePage() {
             Designed early. Maintained over time.
           </h2>
           <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            The best systems are planned before installation begins — and looked after long after the work is done.
+            The best systems start with planning before installation and benefit from ongoing care.
           </p>
           <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            We work with your renovation or setup timeline to ensure everything is designed into your space from the start. And once it's built, we stay involved: monitoring your systems, keeping firmware and security current, and resolving issues before they surface.
+            We work with your renovation or setup timeline to ensure we design everything into your space from the start. Once your setup is ready, we stay involved: monitoring your systems, keeping firmware and security current, and resolving issues before they surface.
           </p>
           <div className="mt-6 space-y-2">
             <p>
