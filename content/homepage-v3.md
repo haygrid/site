@@ -1,6 +1,6 @@
 # One integrated setup. Built for your space.
 
-Your network, security, devices, and smart home — designed to work together from day one.
+Your network, security, devices, and smart home, designed to work together from day one.
 
 → Plan your setup
 
@@ -9,9 +9,9 @@ Your network, security, devices, and smart home — designed to work together fr
 
 ## Designed differently from typical IT setups
 
-Most setups are assembled piece by piece — different vendors, different components, often without a clear structure. The result is systems that don't work well together, gaps that are hard to diagnose, and setups that get harder to manage over time.
+Most setups come together piece by piece - different vendors, different components, often without a clear structure. The result is systems that don't work well together, gaps that are hard to diagnose, and setups that get harder to manage over time.
 
-We take a different approach. Every setup we design starts from the Haygrid Stack — a proven combination of components built to work together. The result is a single integrated setup, designed specifically for your space, that works reliably from day one.
+Every setup we design starts from the Haygrid Stack - a proven combination of components built to work together. The result is a single integrated setup, designed specifically for your space, that works reliably from day one.
 
 → Learn more about the Haygrid Stack
 
@@ -23,7 +23,7 @@ We take a different approach. Every setup we design starts from the Haygrid Stac
 ### Offices
 The right access, for the right people, to the right systems.
 
-Not every system carries the same risk. We design office environments around criticality — structured access, clear audit trails, and the ability to escalate when it matters.
+Not every system carries the same risk. We design office environments around criticality - structured access, clear audit trails, and the ability to escalate when it matters.
 
 Typical projects range between **$3,000 – $40,000+**
 Ongoing support plans typically start from **$100/month**
@@ -51,9 +51,9 @@ Ongoing support plans typically start from **$30/month**
 
 ## Designed early. Maintained over time.
 
-The best systems are planned before installation begins — and looked after long after the work is done.
+The best systems start with planning before installation and benefit from ongoing care.
 
-We work with your renovation or setup timeline to ensure everything is designed into your space from the start. And once it's built, we stay involved: monitoring your systems, keeping firmware and security current, and resolving issues before they surface.
+We work with your renovation or setup timeline to ensure we design everything into your space from the start. Once your setup is ready, we stay involved: monitoring your systems, keeping firmware and security current, and resolving issues before they surface.
 
 → Learn about renovation integration
 → Learn about ongoing support

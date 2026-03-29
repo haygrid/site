@@ -1,6 +1,6 @@
 # Tell us about your space
 
-Whether you're planning a new setup, mid-renovation, or looking to improve what you already have — share a few details and we'll take it from there.
+Whether you're planning a new setup, mid-renovation, or looking to improve what you already have: share a few details and we'll take it from there.
 
 We'll get back to you within one business day.
 
@@ -42,4 +42,4 @@ WhatsApp: +65-8095-0315
 
 ---
 
-*Thanks — we'll review your details and get back to you shortly.*
+*Thanks. We'll review your details and get back to you shortly.*
