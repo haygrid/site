@@ -9,30 +9,29 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="mx-auto max-w-7xl px-6 py-20 md:py-28">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">
-            One integrated setup. Built for your space.
-          </h1>
-          <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-300">
-            Your network, security, devices, and smart home — designed to work together from day one.
-          </p>
-          <div className="mt-6">
-            <Link
-              href="/contact"
-              className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors"
-            >
-              → Plan your setup
-            </Link>
+      <section
+        className="relative overflow-hidden bg-cover bg-center min-h-[480px] md:min-h-[560px] flex items-end"
+        style={{ backgroundImage: "url('/assets/office-hero.png')" }}
+      >
+        <div className="absolute inset-0 bg-zinc-900/60" />
+        <div className="relative mx-auto max-w-7xl w-full px-6 py-16 md:py-24">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight text-white">
+              One integrated setup. Built for your space.
+            </h1>
+            <p className="mt-4 text-lg text-zinc-200">
+              Your network, security, devices, and smart home — designed to work together from day one.
+            </p>
+            <div className="mt-6">
+              <Link
+                href="/contact"
+                className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors"
+              >
+                → Plan your setup
+              </Link>
+            </div>
           </div>
         </div>
-        <img
-          src="/assets/office-hero.png"
-          srcSet="/assets/office-hero-400w.png 400w, /assets/office-hero.png 800w"
-          sizes="100vw"
-          alt="Office environment"
-          className="mt-12 rounded-2xl shadow-lg w-full object-cover max-h-80"
-        />
       </section>
 
       {/* Designed differently */}
