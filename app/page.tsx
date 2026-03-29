@@ -26,8 +26,13 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        {/* TODO: replace with homepage-hero.png once available */}
-        <div className="mt-12 h-64 md:h-80 rounded-2xl bg-gradient-to-br from-amber-100 to-zinc-200 dark:from-amber-900/30 dark:to-zinc-800" />
+        <img
+          src="/assets/office-hero.png"
+          srcSet="/assets/office-hero-400w.png 400w, /assets/office-hero.png 800w"
+          sizes="100vw"
+          alt="Office environment"
+          className="mt-12 rounded-2xl shadow-lg w-full object-cover max-h-80"
+        />
       </section>
 
       {/* Designed differently */}
