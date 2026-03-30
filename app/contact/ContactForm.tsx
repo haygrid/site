@@ -9,6 +9,7 @@ function buildWhatsAppUrl(data: {
   email: string;
   spaceType: string;
   projectStage: string;
+  spaceSize: string;
   budget: string;
   message: string;
 }) {
@@ -19,6 +20,7 @@ function buildWhatsAppUrl(data: {
     `*Email:* ${data.email}`,
     data.spaceType ? `*Space type:* ${data.spaceType}` : null,
     data.projectStage ? `*Project stage:* ${data.projectStage}` : null,
+    data.spaceSize ? `*Space size:* ${data.spaceSize}` : null,
     data.budget ? `*Budget:* ${data.budget}` : null,
     data.message ? `\n${data.message}` : null,
   ]
@@ -39,6 +41,7 @@ export default function ContactForm() {
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
       spaceType: (form.elements.namedItem("spaceType") as HTMLSelectElement).value,
       projectStage: (form.elements.namedItem("projectStage") as HTMLSelectElement).value,
+      spaceSize: (form.elements.namedItem("spaceSize") as HTMLSelectElement).value,
       budget: (form.elements.namedItem("budget") as HTMLSelectElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
     };
@@ -105,6 +108,27 @@ export default function ContactForm() {
           </select>
         </div>
         <div>
+          <label htmlFor="spaceSize" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1.5">
+            Size of space
+          </label>
+          <select
+            id="spaceSize"
+            name="spaceSize"
+            className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+          >
+            <option value="">Select...</option>
+            <option value="Under 500 sqft">Under 500 sqft</option>
+            <option value="500–1,000 sqft">500–1,000 sqft</option>
+            <option value="1,000–2,000 sqft">1,000–2,000 sqft</option>
+            <option value="2,000–3,500 sqft">2,000–3,500 sqft</option>
+            <option value="Above 3,500 sqft">Above 3,500 sqft</option>
+            <option value="I'm not sure">I'm not sure</option>
+          </select>
+        </div>
+      </div>
+
+      <div className="grid sm:grid-cols-2 gap-5">
+        <div>
           <label htmlFor="projectStage" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1.5">
             Project stage
           </label>
@@ -120,23 +144,22 @@ export default function ContactForm() {
             <option value="Already moved in">Already moved in</option>
           </select>
         </div>
-      </div>
-
-      <div>
-        <label htmlFor="budget" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1.5">
-          Estimated budget <span className="text-zinc-400">(optional)</span>
-        </label>
-        <select
-          id="budget"
-          name="budget"
-          className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
-        >
-          <option value="">Select...</option>
-          <option value="Under $5,000">Under $5,000</option>
-          <option value="$5,000–$10,000">$5,000–$10,000</option>
-          <option value="$10,000–$20,000">$10,000–$20,000</option>
-          <option value="$20,000+">$20,000+</option>
-        </select>
+        <div>
+          <label htmlFor="budget" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1.5">
+            Estimated budget <span className="text-zinc-400">(optional)</span>
+          </label>
+          <select
+            id="budget"
+            name="budget"
+            className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+          >
+            <option value="">Select...</option>
+            <option value="Under $5,000">Under $5,000</option>
+            <option value="$5,000–$10,000">$5,000–$10,000</option>
+            <option value="$10,000–$20,000">$10,000–$20,000</option>
+            <option value="$20,000+">$20,000+</option>
+          </select>
+        </div>
       </div>
 
       <div>
