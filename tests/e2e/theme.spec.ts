@@ -80,6 +80,84 @@ test.describe("Dark mode", () => {
   });
 });
 
+test.describe("Mobile light mode", () => {
+  test.use({ colorScheme: "light", viewport: { width: 375, height: 667 } });
+
+  test("body has dark text", async ({ page }) => {
+    await page.goto("/");
+    expect(await getBodyColor(page)).toBe("rgb(24, 24, 27)");
+  });
+
+  test("body uses a light gradient background", async ({ page }) => {
+    await page.goto("/");
+    expect(await getBodyBgImage(page)).toContain("rgb(250, 250, 250)");
+  });
+
+  test("header has light background", async ({ page }) => {
+    await page.goto("/");
+    const bg = await page.locator("header").evaluate((el) => getComputedStyle(el).backgroundColor);
+    const [r, g, b] = bg.match(/\d+/g)!.map(Number);
+    expect(r).toBeGreaterThan(200);
+    expect(g).toBeGreaterThan(200);
+    expect(b).toBeGreaterThan(200);
+  });
+
+  test("mobile menu items have dark text when opened", async ({ page }) => {
+    await page.goto("/");
+    await page.getByRole("button", { name: /toggle menu/i }).click();
+    const contactLink = page.locator("header").getByRole("link", { name: /^contact$/i });
+    const color = await contactLink.evaluate((el) => getComputedStyle(el).color);
+    const [r, g, b] = color.match(/\d+/g)!.map(Number);
+    expect(r).toBeLessThan(100);
+    expect(g).toBeLessThan(100);
+    expect(b).toBeLessThan(100);
+  });
+});
+
+test.describe("Mobile dark mode", () => {
+  test.use({ colorScheme: "dark", viewport: { width: 375, height: 667 } });
+
+  test("body has light text", async ({ page }) => {
+    await page.goto("/");
+    expect(await getBodyColor(page)).toBe("rgb(244, 244, 245)");
+  });
+
+  test("body uses a dark gradient background", async ({ page }) => {
+    await page.goto("/");
+    expect(await getBodyBgImage(page)).toContain("rgb(9, 9, 11)");
+  });
+
+  test("header has dark background", async ({ page }) => {
+    await page.goto("/");
+    const bg = await page.locator("header").evaluate((el) => getComputedStyle(el).backgroundColor);
+    const [r, g, b] = bg.match(/\d+/g)!.map(Number);
+    expect(r).toBeLessThan(30);
+    expect(g).toBeLessThan(30);
+    expect(b).toBeLessThan(30);
+  });
+
+  test("mobile menu items have light text when opened", async ({ page }) => {
+    await page.goto("/");
+    await page.getByRole("button", { name: /toggle menu/i }).click();
+    const contactLink = page.locator("header").getByRole("link", { name: /^contact$/i });
+    const color = await contactLink.evaluate((el) => getComputedStyle(el).color);
+    const [r, g, b] = color.match(/\d+/g)!.map(Number);
+    expect(r).toBeGreaterThan(150);
+    expect(g).toBeGreaterThan(150);
+    expect(b).toBeGreaterThan(150);
+  });
+
+  test("contact form fields have dark background on mobile", async ({ page }) => {
+    await page.goto("/contact/");
+    const input = page.getByLabel(/name/i);
+    const bg = await input.evaluate((el) => getComputedStyle(el).backgroundColor);
+    const [r, g, b] = bg.match(/\d+/g)!.map(Number);
+    expect(r).toBeLessThan(60);
+    expect(g).toBeLessThan(60);
+    expect(b).toBeLessThan(60);
+  });
+});
+
 test.describe("Dark/light contrast", () => {
   test("body text colour differs between light and dark mode", async ({ browser }) => {
     const lightCtx = await browser.newContext({ colorScheme: "light" });
