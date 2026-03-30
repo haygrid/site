@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SolutionsTabs from "./components/SolutionsTabs";
 
 export const metadata = {
   title: "Haygrid Systems",
@@ -59,67 +60,7 @@ export default function HomePage() {
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mb-8">
           Solutions for every space
         </h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {/* Offices */}
-          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-6 flex flex-col">
-            <h3 className="font-semibold text-lg">Offices</h3>
-            <p className="mt-1 text-sm font-medium text-amber-600 dark:text-amber-400">
-              The right access, for the right people, to the right systems.
-            </p>
-            <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              Not every system carries the same risk. We design office environments around criticality - structured access, clear audit trails, and the ability to escalate when it matters.
-            </p>
-            <div className="mt-4 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
-              <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$3,000 – $40,000+</strong></p>
-              <p>Support plans from: <strong className="text-zinc-700 dark:text-zinc-300">$100/month</strong></p>
-            </div>
-            <div className="mt-5">
-              <Link href="/solutions/office" className="text-sm text-amber-500 hover:text-amber-600 font-medium transition-colors">
-                → Office solutions
-              </Link>
-            </div>
-          </div>
-
-          {/* Retail & F&B */}
-          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-6 flex flex-col">
-            <h3 className="font-semibold text-lg">Retail & F&B</h3>
-            <p className="mt-1 text-sm font-medium text-amber-600 dark:text-amber-400">
-              Uptime when you're open. Security when you're not.
-            </p>
-            <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              Dropped transactions mean lost revenue, and CCTV blind spots leave your store exposed to theft. We design retail systems that keep operations stable during trading hours and your store protected after closing.
-            </p>
-            <div className="mt-4 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
-              <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$4,000 – $30,000+</strong></p>
-              <p>Support plans from: <strong className="text-zinc-700 dark:text-zinc-300">$300/month</strong></p>
-            </div>
-            <div className="mt-5">
-              <Link href="/solutions/retail" className="text-sm text-amber-500 hover:text-amber-600 font-medium transition-colors">
-                → Retail & F&B solutions
-              </Link>
-            </div>
-          </div>
-
-          {/* Homes */}
-          <div className="rounded-2xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-6 flex flex-col">
-            <h3 className="font-semibold text-lg">Homes</h3>
-            <p className="mt-1 text-sm font-medium text-amber-600 dark:text-amber-400">
-              Invisible by design. Present when you need it.
-            </p>
-            <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              No visible cables. No cluttered equipment. Technology built into your home rather than added to it - seamless to live with, simple to use.
-            </p>
-            <div className="mt-4 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
-              <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$2,500 – $15,000+</strong></p>
-              <p>Support plans from: <strong className="text-zinc-700 dark:text-zinc-300">$30/month</strong></p>
-            </div>
-            <div className="mt-5">
-              <Link href="/solutions/homes" className="text-sm text-amber-500 hover:text-amber-600 font-medium transition-colors">
-                → Home solutions
-              </Link>
-            </div>
-          </div>
-        </div>
+        <SolutionsTabs />
       </section>
 
       {/* Designed early. Maintained over time. */}
