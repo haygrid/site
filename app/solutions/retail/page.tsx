@@ -132,7 +132,7 @@ export default function RetailPage() {
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>POS-ready configuration</li>
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Basic CCTV system</li>
               </ul>
-              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
+              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-400 dark:text-zinc-200 space-y-1">
                 <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$4,000 – $7,000</strong></p>
                 <p>Support from: <strong className="text-zinc-700 dark:text-zinc-300">$300/month</strong></p>
               </div>
@@ -150,7 +150,7 @@ export default function RetailPage() {
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Access control for secure entry</li>
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Storage and backup</li>
               </ul>
-              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
+              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-400 dark:text-zinc-200 space-y-1">
                 <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$7,000 – $15,000</strong></p>
                 <p>Support from: <strong className="text-zinc-700 dark:text-zinc-300">$300/month</strong></p>
               </div>
@@ -167,7 +167,7 @@ export default function RetailPage() {
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Backup connectivity options</li>
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Enhanced monitoring and redundancy</li>
               </ul>
-              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
+              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-400 dark:text-zinc-200 space-y-1">
                 <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$15,000 – $30,000+</strong></p>
                 <p>Support from: <strong className="text-zinc-700 dark:text-zinc-300">$500/month</strong></p>
               </div>

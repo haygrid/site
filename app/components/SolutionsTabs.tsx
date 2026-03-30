@@ -75,20 +75,20 @@ export default function SolutionsTabs() {
         style={{ backgroundImage: `url(${tab.image})` }}
       >
         {/* Mobile overlay */}
-        <div className="absolute inset-0 bg-white/80 md:hidden" />
+        <div className="absolute inset-0 bg-white/80 dark:bg-zinc-900/80 md:hidden" />
         <div className="relative p-8 flex flex-col justify-between md:bg-white md:dark:bg-zinc-900">
           <div>
-            <p className="text-xl font-semibold text-zinc-900 md:dark:text-zinc-100 leading-snug">{tab.tagline}</p>
-            <p className="mt-4 text-zinc-600 md:dark:text-zinc-400 leading-relaxed">{tab.description}</p>
+            <p className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 leading-snug">{tab.tagline}</p>
+            <p className="mt-4 text-zinc-600 dark:text-zinc-400 leading-relaxed">{tab.description}</p>
           </div>
           <div>
-            <div className="mt-8 pt-6 border-t border-zinc-200 md:border-zinc-100 md:dark:border-zinc-800 flex gap-8 text-sm">
+            <div className="mt-8 pt-6 border-t border-zinc-200 dark:border-zinc-700 flex gap-8 text-sm">
               <div>
-                <p className="text-xs text-zinc-700 uppercase tracking-wide mb-1">Typical projects</p>
+                <p className="text-xs text-zinc-700 dark:text-zinc-400 uppercase tracking-wide mb-1">Typical projects</p>
                 <p className="font-semibold text-zinc-800 dark:text-zinc-200">{tab.projectRange}</p>
               </div>
               <div>
-                <p className="text-xs text-zinc-700 uppercase tracking-wide mb-1">Support from</p>
+                <p className="text-xs text-zinc-700 dark:text-zinc-400 uppercase tracking-wide mb-1">Support from</p>
                 <p className="font-semibold text-zinc-800 dark:text-zinc-200">{tab.supportFrom}</p>
               </div>
             </div>

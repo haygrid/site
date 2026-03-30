@@ -97,7 +97,7 @@ export default function OfficePage() {
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Network and WiFi setup</li>
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Core system configuration</li>
               </ul>
-              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
+              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-400 dark:text-zinc-200 space-y-1">
                 <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$3,000 – $6,000</strong></p>
                 <p>Support from: <strong className="text-zinc-700 dark:text-zinc-300">$100/month</strong></p>
               </div>
@@ -115,7 +115,7 @@ export default function OfficePage() {
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Data protection and backup</li>
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Integrated systems for daily operations</li>
               </ul>
-              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
+              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-400 dark:text-zinc-200 space-y-1">
                 <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$6,000 – $15,000</strong></p>
                 <p>Support from: <strong className="text-zinc-700 dark:text-zinc-300">$300/month</strong></p>
               </div>
@@ -131,7 +131,7 @@ export default function OfficePage() {
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Multi-site or scalable setups</li>
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Extended monitoring and support</li>
               </ul>
-              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
+              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-400 dark:text-zinc-200 space-y-1">
                 <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$15,000 – $40,000+</strong></p>
                 <p>Support from: <strong className="text-zinc-700 dark:text-zinc-300">$500/month</strong></p>
               </div>

@@ -97,7 +97,7 @@ export default function HomesPage() {
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>WiFi coverage across key areas</li>
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Core system setup</li>
               </ul>
-              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
+              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-400 dark:text-zinc-200 space-y-1">
                 <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$2,500 – $4,500</strong></p>
                 <p>Support from: <strong className="text-zinc-700 dark:text-zinc-300">$30/month</strong></p>
               </div>
@@ -113,7 +113,7 @@ export default function HomesPage() {
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Integrated smart home setup</li>
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Security system setup</li>
               </ul>
-              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
+              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-400 dark:text-zinc-200 space-y-1">
                 <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$3,500 – $8,000</strong></p>
                 <p>Support from: <strong className="text-zinc-700 dark:text-zinc-300">$50/month</strong></p>
               </div>
@@ -128,7 +128,7 @@ export default function HomesPage() {
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Enhanced smart home integration</li>
                 <li className="flex items-start gap-2"><span className="text-amber-400 mt-0.5">✓</span>Expanded security setup</li>
               </ul>
-              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 space-y-1">
+              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 text-xs text-zinc-400 dark:text-zinc-200 space-y-1">
                 <p>Typical projects: <strong className="text-zinc-700 dark:text-zinc-300">$8,000 – $15,000+</strong></p>
                 <p>Support from: <strong className="text-zinc-700 dark:text-zinc-300">$100/month</strong></p>
               </div>
