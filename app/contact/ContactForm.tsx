@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const WHATSAPP_NUMBER = "6580950315";
 
-function buildWhatsAppUrl(data: {
+export function buildWhatsAppUrl(data: {
   name: string;
   email: string;
   spaceType: string;
