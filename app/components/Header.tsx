@@ -54,7 +54,8 @@ export default function Header() {
       className="sticky top-0 z-30 backdrop-blur bg-white/70 dark:bg-zinc-950/50 border-b border-zinc-200 dark:border-zinc-800"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        {/* Logo */}
+        {/* Logo + Desktop nav */}
+        <div className="flex items-center gap-4">
         <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight text-xl">
           <img src="/assets/haygrid-logo.svg" alt="" aria-hidden="true" className="h-7 w-7" />
           <span>Haygrid <span className="text-amber-500">Systems</span></span>
@@ -121,6 +122,7 @@ export default function Header() {
             Contact
           </Link>
         </nav>
+        </div>
 
         {/* CTA + hamburger */}
         <div className="flex items-center gap-3">
