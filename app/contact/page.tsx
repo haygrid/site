@@ -21,6 +21,26 @@ export default function ContactPage() {
       <div className="mt-10">
         <ContactForm />
       </div>
+
+      <div className="mt-10 pt-8 border-t border-zinc-200 dark:border-zinc-800">
+        <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Prefer to reach out directly?</p>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <a
+            href="mailto:info@haygrid.com"
+            className="inline-flex items-center gap-2 rounded-xl border border-zinc-200 dark:border-zinc-700 px-4 py-2.5 text-sm text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 dark:hover:border-zinc-500 transition-colors"
+          >
+            <span>✉</span> info@haygrid.com
+          </a>
+          <a
+            href="https://wa.me/6580950315"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-xl border border-zinc-200 dark:border-zinc-700 px-4 py-2.5 text-sm text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 dark:hover:border-zinc-500 transition-colors"
+          >
+            <span>💬</span> WhatsApp
+          </a>
+        </div>
+      </div>
     </section>
   );
 }

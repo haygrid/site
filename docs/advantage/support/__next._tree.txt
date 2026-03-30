@@ -1,3 +1,3 @@
-:HL["/_next/static/chunks/12_t5fhxdyni~.css","style"]
+:HL["/_next/static/chunks/0qeyluknu~mnd.css","style"]
 :HL["/assets/haygrid-logo.svg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"advantage","param":null,"prefetchHints":0,"slots":{"children":{"name":"support","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"BryCjMCTm72W-Npo9dXu2"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"advantage","param":null,"prefetchHints":0,"slots":{"children":{"name":"support","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"Df37SqsV95cbl1_AC806i"}
