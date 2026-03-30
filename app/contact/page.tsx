@@ -1,5 +1,4 @@
-const mailto = "mailto:info@haygrid.com?subject=Consultation%20Request%20—%20Haygrid%20Systems";
-const whatsapp = "https://wa.me/6580950315";
+import ContactForm from "./ContactForm";
 
 export const metadata = {
   title: "Contact Us | Haygrid Systems",
@@ -19,31 +18,8 @@ export default function ContactPage() {
         We'll get back to you within one business day.
       </p>
 
-      <div className="mt-10 space-y-4">
-        <a
-          href={mailto}
-          className="flex items-center gap-4 rounded-2xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-6 py-4 text-sm text-zinc-600 dark:text-zinc-400 hover:border-amber-400 hover:text-amber-500 transition-colors"
-        >
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-800 text-base">✉️</span>
-          <div>
-            <p className="font-medium text-zinc-800 dark:text-zinc-200">Email us</p>
-            <p className="text-zinc-500 dark:text-zinc-400">info@haygrid.com</p>
-          </div>
-        </a>
-        <a
-          href={whatsapp}
-          target="_blank"
-          rel="noopener"
-          className="flex items-center gap-4 rounded-2xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-6 py-4 text-sm text-zinc-600 dark:text-zinc-400 hover:border-amber-400 hover:text-amber-500 transition-colors"
-        >
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-800">
-            <img src="/assets/whatsapp-logo.svg" alt="" className="h-5 w-5" />
-          </span>
-          <div>
-            <p className="font-medium text-zinc-800 dark:text-zinc-200">WhatsApp</p>
-            <p className="text-zinc-500 dark:text-zinc-400">+65 8095 0315</p>
-          </div>
-        </a>
+      <div className="mt-10">
+        <ContactForm />
       </div>
     </section>
   );

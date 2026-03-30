@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/0u-c_98.25nc9.css","style"]
+:HL["/_next/static/chunks/15cnbtorle~oi.css","style"]
 :HL["/assets/haygrid-logo.svg","image"]
 :HL["/assets/haygrid-stack.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"advantage","param":null,"prefetchHints":0,"slots":{"children":{"name":"stack","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"2qIpzuD2BJIeS66mOf_uv"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"advantage","param":null,"prefetchHints":0,"slots":{"children":{"name":"stack","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"yXgfUpUxPibGeZc42tznh"}
