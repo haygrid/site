@@ -169,7 +169,7 @@ describe("ContactForm", () => {
     expect(window.open).toHaveBeenCalledTimes(2);
   });
 
-  it("Edit then Send again sends the updated data", async () => {
+  it("Edit → update field → Send via WhatsApp sends updated data", async () => {
     const user = userEvent.setup();
     render(<ContactForm />);
 
@@ -177,7 +177,6 @@ describe("ContactForm", () => {
     await user.type(screen.getByLabelText(/email/i), "jane@example.com");
     await user.click(screen.getByRole("button", { name: /send via whatsapp/i }));
 
-    // Edit: clear name and type a new one
     await user.click(screen.getByRole("button", { name: /edit/i }));
     await user.clear(screen.getByLabelText(/name/i));
     await user.type(screen.getByLabelText(/name/i), "John Smith");
