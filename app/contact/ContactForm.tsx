@@ -30,8 +30,10 @@ function buildWhatsAppUrl(data: {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines)}`;
 }
 
+const fieldClass = "w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400 disabled:opacity-50 disabled:cursor-not-allowed";
+
 export default function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
+  const [locked, setLocked] = useState(false);
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -47,19 +49,7 @@ export default function ContactForm() {
     };
 
     window.open(buildWhatsAppUrl(data), "_blank", "noopener");
-    setSubmitted(true);
-  }
-
-  if (submitted) {
-    return (
-      <div className="text-center py-8">
-        <div className="text-3xl mb-3">✓</div>
-        <p className="font-semibold text-lg">WhatsApp is ready to send.</p>
-        <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
-          Just tap <strong>Send</strong> in WhatsApp and we'll get back to you within one business day.
-        </p>
-      </div>
-    );
+    setLocked(true);
   }
 
   return (
@@ -74,7 +64,8 @@ export default function ContactForm() {
             name="name"
             type="text"
             required
-            className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+            disabled={locked}
+            className={fieldClass}
           />
         </div>
         <div>
@@ -86,7 +77,8 @@ export default function ContactForm() {
             name="email"
             type="email"
             required
-            className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+            disabled={locked}
+            className={fieldClass}
           />
         </div>
       </div>
@@ -99,7 +91,8 @@ export default function ContactForm() {
           <select
             id="spaceType"
             name="spaceType"
-            className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+            disabled={locked}
+            className={fieldClass}
           >
             <option value="">Select...</option>
             <option value="Home">Home</option>
@@ -114,7 +107,8 @@ export default function ContactForm() {
           <select
             id="spaceSize"
             name="spaceSize"
-            className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+            disabled={locked}
+            className={fieldClass}
           >
             <option value="">Select...</option>
             <option value="Under 500 sqft">Under 500 sqft</option>
@@ -135,7 +129,8 @@ export default function ContactForm() {
           <select
             id="projectStage"
             name="projectStage"
-            className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+            disabled={locked}
+            className={fieldClass}
           >
             <option value="">Select...</option>
             <option value="Planning">Planning</option>
@@ -151,7 +146,8 @@ export default function ContactForm() {
           <select
             id="budget"
             name="budget"
-            className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+            disabled={locked}
+            className={fieldClass}
           >
             <option value="">Select...</option>
             <option value="Under $5,000">Under $5,000</option>
@@ -170,16 +166,41 @@ export default function ContactForm() {
           id="message"
           name="message"
           rows={4}
-          className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400 resize-none"
+          disabled={locked}
+          className={`${fieldClass} resize-none`}
         />
       </div>
 
-      <button
-        type="submit"
-        className="w-full rounded-2xl bg-amber-400 text-zinc-900 px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors"
-      >
-        Send via WhatsApp →
-      </button>
+      {locked ? (
+        <div className="space-y-3">
+          <div className="flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+            <span className="text-green-500">✓</span>
+            <span>WhatsApp is ready to send. Tap <strong>Send</strong> in WhatsApp to confirm.</span>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            <button
+              type="button"
+              onClick={() => setLocked(false)}
+              className="rounded-2xl border border-zinc-300 dark:border-zinc-600 text-zinc-700 dark:text-zinc-300 px-5 py-3 text-sm font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              Edit
+            </button>
+            <button
+              type="submit"
+              className="rounded-2xl bg-amber-400 text-zinc-900 px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors"
+            >
+              Send again →
+            </button>
+          </div>
+        </div>
+      ) : (
+        <button
+          type="submit"
+          className="w-full rounded-2xl bg-amber-400 text-zinc-900 px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors"
+        >
+          Send via WhatsApp →
+        </button>
+      )}
     </form>
   );
 }
