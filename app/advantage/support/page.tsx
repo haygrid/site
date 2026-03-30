@@ -23,7 +23,7 @@ export default function SupportPage() {
           We stay involved after the installation is complete.
         </p>
         <div className="mt-6">
-          <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
+          <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-zinc-900 px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
             → Plan your setup
           </Link>
         </div>
@@ -100,7 +100,7 @@ export default function SupportPage() {
         <h2 className="text-2xl font-semibold tracking-tight">Tell us about your project</h2>
         <p className="mt-3 text-zinc-600 dark:text-zinc-300">Share a few details about your space, and we'll take it from there.</p>
         <div className="mt-6">
-          <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
+          <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-zinc-900 px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
             → Plan your setup
           </Link>
         </div>

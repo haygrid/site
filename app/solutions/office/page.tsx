@@ -21,7 +21,7 @@ export default function OfficePage() {
             We design office environments the way they should have been built from the start - structured around what matters, secured at every level, and built to stay that way.
           </p>
           <div className="mt-6">
-            <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
+            <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-zinc-900 px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
               → Plan your setup
             </Link>
           </div>
@@ -105,7 +105,7 @@ export default function OfficePage() {
 
             {/* Office Pro (recommended) */}
             <div className="rounded-2xl border-2 border-amber-400 dark:border-amber-500 bg-white dark:bg-zinc-900 p-6 relative">
-              <div className="absolute -top-3 left-4 bg-amber-400 text-white text-xs font-semibold px-3 py-1 rounded-full">Recommended</div>
+              <div className="absolute -top-3 left-4 bg-amber-400 text-zinc-900 text-xs font-semibold px-3 py-1 rounded-full">Recommended</div>
               <h3 className="font-semibold text-lg">Office Pro</h3>
               <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">For most SMBs - teams that depend on their systems daily, handle sensitive data, or need clear structure across their access and operations.</p>
               <ul className="mt-4 space-y-1 text-sm text-zinc-600 dark:text-zinc-300">

@@ -23,7 +23,7 @@ export default function RenovationPage() {
           We work with you early - during planning and renovation - so we design your system into your space from the start.
         </p>
         <div className="mt-6">
-          <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
+          <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-zinc-900 px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
             → Plan your setup
           </Link>
         </div>
@@ -74,7 +74,7 @@ export default function RenovationPage() {
             If you're planning a renovation or in the early stages of a fitout, now is the right time to get in touch.
           </p>
           <div className="mt-6">
-            <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
+            <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-zinc-900 px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
               → Plan your setup
             </Link>
           </div>

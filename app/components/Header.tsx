@@ -128,7 +128,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <Link
             href="/contact"
-            className="hidden md:inline-flex items-center rounded-xl bg-amber-400 text-white px-4 py-2 text-sm font-medium hover:bg-amber-500 transition-colors"
+            className="hidden md:inline-flex items-center rounded-xl bg-amber-400 text-zinc-900 px-4 py-2 text-sm font-medium hover:bg-amber-500 transition-colors"
           >
             Plan your setup
           </Link>
@@ -211,7 +211,7 @@ export default function Header() {
           <div className="pt-2 pb-1">
             <Link
               href="/contact"
-              className="block text-center rounded-xl bg-amber-400 text-white px-4 py-2 text-sm font-medium hover:bg-amber-500"
+              className="block text-center rounded-xl bg-amber-400 text-zinc-900 px-4 py-2 text-sm font-medium hover:bg-amber-500"
             >
               Plan your setup
             </Link>

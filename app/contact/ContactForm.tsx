@@ -161,7 +161,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="w-full rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors disabled:opacity-60"
+        className="w-full rounded-2xl bg-amber-400 text-zinc-900 px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors disabled:opacity-60"
       >
         {status === "submitting" ? "Sending..." : "Plan your setup →"}
       </button>

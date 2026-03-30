@@ -24,7 +24,7 @@ export default function RetailPage() {
             We design integrated systems for retail and F&B operators - built to keep operations running under pressure, and your store protected around the clock.
           </p>
           <div className="mt-6">
-            <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
+            <Link href="/contact" className="inline-flex items-center rounded-2xl bg-amber-400 text-zinc-900 px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors">
               → Plan your setup
             </Link>
           </div>
@@ -140,7 +140,7 @@ export default function RetailPage() {
 
             {/* Retail Secure (recommended) */}
             <div className="rounded-2xl border-2 border-amber-400 dark:border-amber-500 bg-white dark:bg-zinc-900 p-6 relative">
-              <div className="absolute -top-3 left-4 bg-amber-400 text-white text-xs font-semibold px-3 py-1 rounded-full">Recommended</div>
+              <div className="absolute -top-3 left-4 bg-amber-400 text-zinc-900 text-xs font-semibold px-3 py-1 rounded-full">Recommended</div>
               <h3 className="font-semibold text-lg">Retail Secure</h3>
               <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">For most retail and F&B operators - stores that handle daily transactions, need full CCTV coverage, and want controlled access.</p>
               <ul className="mt-4 space-y-1 text-sm text-zinc-600 dark:text-zinc-300">

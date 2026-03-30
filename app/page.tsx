@@ -26,7 +26,7 @@ export default function HomePage() {
             <div className="mt-6">
               <Link
                 href="/contact"
-                className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors"
+                className="inline-flex items-center rounded-2xl bg-amber-400 text-zinc-900 px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors"
               >
                 → Plan your setup
               </Link>
@@ -100,7 +100,7 @@ export default function HomePage() {
           <div className="mt-6">
             <Link
               href="/contact"
-              className="inline-flex items-center rounded-2xl bg-amber-400 text-white px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors"
+              className="inline-flex items-center rounded-2xl bg-amber-400 text-zinc-900 px-5 py-3 text-sm font-medium hover:bg-amber-500 transition-colors"
             >
               → Plan your setup
             </Link>
