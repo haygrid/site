@@ -110,7 +110,7 @@ describe("ContactForm", () => {
     expect(decoded).toContain("Smart home setup.");
   });
 
-  it("shows locked state with confirmation message after submit", async () => {
+  it("disables all fields and shows confirmation + Edit + Send again after submit", async () => {
     const user = userEvent.setup();
     render(<ContactForm />);
 
@@ -118,11 +118,24 @@ describe("ContactForm", () => {
     await user.type(screen.getByLabelText(/email/i), "jane@example.com");
     await user.click(screen.getByRole("button", { name: /send via whatsapp/i }));
 
+    // Confirmation message
     expect(screen.getByText(/whatsapp is ready to send/i)).toBeInTheDocument();
+
+    // All fields are disabled
+    expect(screen.getByLabelText(/name/i)).toBeDisabled();
+    expect(screen.getByLabelText(/email/i)).toBeDisabled();
+    expect(screen.getByLabelText(/type of space/i)).toBeDisabled();
+    expect(screen.getByLabelText(/size of space/i)).toBeDisabled();
+    expect(screen.getByLabelText(/project stage/i)).toBeDisabled();
+    expect(screen.getByLabelText(/estimated budget/i)).toBeDisabled();
+    expect(screen.getByLabelText(/tell us about/i)).toBeDisabled();
+
+    // Action buttons
     expect(screen.getByRole("button", { name: /edit/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /send again/i })).toBeInTheDocument();
   });
 
-  it("unlocks the form when Edit is clicked", async () => {
+  it("re-enables all fields and restores Send button when Edit is clicked", async () => {
     const user = userEvent.setup();
     render(<ContactForm />);
 
@@ -131,7 +144,32 @@ describe("ContactForm", () => {
     await user.click(screen.getByRole("button", { name: /send via whatsapp/i }));
     await user.click(screen.getByRole("button", { name: /edit/i }));
 
+    // All fields re-enabled
+    expect(screen.getByLabelText(/name/i)).not.toBeDisabled();
+    expect(screen.getByLabelText(/email/i)).not.toBeDisabled();
+    expect(screen.getByLabelText(/type of space/i)).not.toBeDisabled();
+    expect(screen.getByLabelText(/size of space/i)).not.toBeDisabled();
+    expect(screen.getByLabelText(/project stage/i)).not.toBeDisabled();
+    expect(screen.getByLabelText(/estimated budget/i)).not.toBeDisabled();
+    expect(screen.getByLabelText(/tell us about/i)).not.toBeDisabled();
+
+    // Back to initial submit button
     expect(screen.getByRole("button", { name: /send via whatsapp/i })).toBeInTheDocument();
+  });
+
+  it("Send again opens WhatsApp a second time with the same data", async () => {
+    const user = userEvent.setup();
+    render(<ContactForm />);
+
+    await user.type(screen.getByLabelText(/name/i), "Jane Doe");
+    await user.type(screen.getByLabelText(/email/i), "jane@example.com");
+    await user.click(screen.getByRole("button", { name: /send via whatsapp/i }));
+    await user.click(screen.getByRole("button", { name: /send again/i }));
+
+    expect(window.open).toHaveBeenCalledTimes(2);
+    const firstUrl = (window.open as ReturnType<typeof vi.fn>).mock.calls[0][0] as string;
+    const secondUrl = (window.open as ReturnType<typeof vi.fn>).mock.calls[1][0] as string;
+    expect(firstUrl).toEqual(secondUrl);
   });
 
   it("omits empty optional fields from the WhatsApp URL", async () => {
