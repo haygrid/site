@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/15cnbtorle~oi.css","style"]
+:HL["/_next/static/chunks/12_t5fhxdyni~.css","style"]
 :HL["/assets/haygrid-logo.svg","image"]
 :HL["/assets/office-hero.png","image",{"imageSrcSet":"/assets/office-hero-400w.png 400w, /assets/office-hero.png 800w","imageSizes":"(max-width: 768px) 100vw, 50vw"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"solutions","param":null,"prefetchHints":0,"slots":{"children":{"name":"office","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"2GIrXKkzSuM0JFGfq1dI8"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"solutions","param":null,"prefetchHints":0,"slots":{"children":{"name":"office","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"BryCjMCTm72W-Npo9dXu2"}
