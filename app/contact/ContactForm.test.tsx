@@ -157,7 +157,7 @@ describe("ContactForm", () => {
     expect(screen.getByRole("button", { name: /send via whatsapp/i })).toBeInTheDocument();
   });
 
-  it("Send again opens WhatsApp a second time with the same data", async () => {
+  it("Send again opens WhatsApp again", async () => {
     const user = userEvent.setup();
     render(<ContactForm />);
 
@@ -167,9 +167,27 @@ describe("ContactForm", () => {
     await user.click(screen.getByRole("button", { name: /send again/i }));
 
     expect(window.open).toHaveBeenCalledTimes(2);
-    const firstUrl = (window.open as ReturnType<typeof vi.fn>).mock.calls[0][0] as string;
+  });
+
+  it("Edit then Send again sends the updated data", async () => {
+    const user = userEvent.setup();
+    render(<ContactForm />);
+
+    await user.type(screen.getByLabelText(/name/i), "Jane Doe");
+    await user.type(screen.getByLabelText(/email/i), "jane@example.com");
+    await user.click(screen.getByRole("button", { name: /send via whatsapp/i }));
+
+    // Edit: clear name and type a new one
+    await user.click(screen.getByRole("button", { name: /edit/i }));
+    await user.clear(screen.getByLabelText(/name/i));
+    await user.type(screen.getByLabelText(/name/i), "John Smith");
+    await user.click(screen.getByRole("button", { name: /send via whatsapp/i }));
+
+    expect(window.open).toHaveBeenCalledTimes(2);
     const secondUrl = (window.open as ReturnType<typeof vi.fn>).mock.calls[1][0] as string;
-    expect(firstUrl).toEqual(secondUrl);
+    const decoded = decodeURIComponent(secondUrl.split("?text=")[1]);
+    expect(decoded).toContain("*Name:* John Smith");
+    expect(decoded).not.toContain("Jane Doe");
   });
 
   it("omits empty optional fields from the WhatsApp URL", async () => {
