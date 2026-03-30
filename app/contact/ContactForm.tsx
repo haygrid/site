@@ -13,13 +13,13 @@ function buildWhatsAppUrl(data: {
   message: string;
 }) {
   const lines = [
-    `New enquiry via haygrid.com`,
+    `*New enquiry via haygrid.com*`,
     ``,
-    `Name: ${data.name}`,
-    `Email: ${data.email}`,
-    data.spaceType ? `Space type: ${data.spaceType}` : null,
-    data.projectStage ? `Project stage: ${data.projectStage}` : null,
-    data.budget ? `Budget: ${data.budget}` : null,
+    `*Name:* ${data.name}`,
+    `*Email:* ${data.email}`,
+    data.spaceType ? `*Space type:* ${data.spaceType}` : null,
+    data.projectStage ? `*Project stage:* ${data.projectStage}` : null,
+    data.budget ? `*Budget:* ${data.budget}` : null,
     data.message ? `\n${data.message}` : null,
   ]
     .filter((l) => l !== null)
