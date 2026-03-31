@@ -23,21 +23,29 @@ export default function ContactPage() {
       </div>
 
       <div className="mt-10 pt-8 border-t border-zinc-200 dark:border-zinc-800">
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Prefer to reach out directly?</p>
+        <h2 className="text-base font-semibold text-zinc-800 dark:text-zinc-200 mb-4">Prefer to reach out directly?</h2>
         <div className="flex flex-col sm:flex-row gap-3">
           <a
             href="mailto:info@haygrid.com"
-            className="inline-flex items-center gap-2 rounded-xl border border-zinc-200 dark:border-zinc-700 px-4 py-2.5 text-sm text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 dark:hover:border-zinc-500 transition-colors"
+            className="inline-flex items-center gap-3 rounded-xl border border-zinc-200 dark:border-zinc-700 px-4 py-3 text-sm text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 dark:hover:border-zinc-500 transition-colors"
           >
-            <span>✉</span> info@haygrid.com
+            <span>✉</span>
+            <div>
+              <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-0.5">Email</p>
+              <p>info@haygrid.com</p>
+            </div>
           </a>
           <a
             href="https://wa.me/6580950315"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-xl border border-zinc-200 dark:border-zinc-700 px-4 py-2.5 text-sm text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 dark:hover:border-zinc-500 transition-colors"
+            className="inline-flex items-center gap-3 rounded-xl border border-zinc-200 dark:border-zinc-700 px-4 py-3 text-sm text-zinc-700 dark:text-zinc-300 hover:border-zinc-400 dark:hover:border-zinc-500 transition-colors"
           >
-            <span>💬</span> WhatsApp
+            <img src="/assets/whatsapp-logo.svg" alt="" className="h-4 w-4" />
+            <div>
+              <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-0.5">WhatsApp</p>
+              <p>+65 8095 0315</p>
+            </div>
           </a>
         </div>
       </div>

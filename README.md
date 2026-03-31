@@ -66,3 +66,32 @@ To deploy manually without the test gate:
    ```
 
 GitHub Pages serves from the `docs/` folder on the `main` branch. The site is available at https://www.haygrid.com.
+
+## Contact Worker (Cloudflare Worker + AWS SES)
+
+The contact form's email path posts to `https://www.haygrid.com/api/contact`, handled by a Cloudflare Worker defined in `worker/`.
+
+### Local dev
+
+```bash
+npm run worker:dev
+```
+
+### Deploy
+
+```bash
+npm run worker:deploy
+```
+
+### First-time setup
+
+Set the required secrets via Wrangler before deploying:
+
+```bash
+npx wrangler secret put AWS_ACCESS_KEY_ID --config worker/wrangler.toml
+npx wrangler secret put AWS_SECRET_ACCESS_KEY --config worker/wrangler.toml
+npx wrangler secret put SES_FROM_EMAIL --config worker/wrangler.toml
+npx wrangler secret put SES_TO_EMAIL --config worker/wrangler.toml
+```
+
+The Worker route (`www.haygrid.com/api/contact`) requires `www.haygrid.com` to be proxied through Cloudflare (orange cloud enabled in DNS settings).
