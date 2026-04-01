@@ -10,8 +10,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "deploy": "npm run build && npm test && npm run test:e2e && git add docs/ && (git diff --cached --quiet || git commit -m 'Deploy: build and tests passed') && git push",
-    "worker:dev": "wrangler dev --config worker/wrangler.toml",
+"worker:dev": "wrangler dev --config worker/wrangler.toml",
     "worker:deploy": "wrangler deploy --config worker/wrangler.toml"
   },
   "dependencies": {

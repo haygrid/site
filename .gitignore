@@ -1,7 +1,8 @@
 node_modules
+infra/*.tfvars
 .DS_Store
 .next
-docs/dev/
+out/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
