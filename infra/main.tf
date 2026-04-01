@@ -52,6 +52,8 @@ resource "cloudflare_pages_domain" "staging" {
 }
 
 # DNS: www → Pages production
+# CUTOVER STEP: only apply this after verifying the site at haygrid-site.pages.dev
+# Run separately: tofu apply -target=cloudflare_record.www
 resource "cloudflare_record" "www" {
   zone_id         = var.cloudflare_zone_id
   name            = "www"
