@@ -1,7 +1,12 @@
 name = "haygrid-contact"
-main = "worker/src/index.ts"
+main = "src/index.ts"
 compatibility_date = "2025-01-01"
 
 [[routes]]
 pattern = "www.haygrid.com/api/contact"
 zone_name = "haygrid.com"
+
+[observability]
+[observability.logs]
+enabled = true
+invocation_logs = true
