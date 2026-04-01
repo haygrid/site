@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/0418msgj2uxsw.css","style"]
+:HL["/_next/static/chunks/16ug_4si6acuc.css","style"]
 :HL["/assets/haygrid-logo.svg","image"]
 :HL["/assets/retail-hero.png","image",{"imageSrcSet":"/assets/retail-hero-400w.png 400w, /assets/retail-hero.png 800w","imageSizes":"(max-width: 768px) 100vw, 50vw"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"solutions","param":null,"prefetchHints":0,"slots":{"children":{"name":"retail","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"CgEp6L84Pob2nJdclgK2_"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"solutions","param":null,"prefetchHints":0,"slots":{"children":{"name":"retail","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"XU2oRz9aOSOml8NX2UYi3"}
