@@ -31,9 +31,22 @@ resource "cloudflare_pages_project" "haygrid" {
   }
 
   build_config {
-    build_command   = "npm run build"
-    destination_dir = "out"
-    root_dir        = ""
+    build_command       = "npm run build"
+    destination_dir     = "out"
+    root_dir            = ""
+    web_analytics_tag   = "e7c0d9cc4c7a4cfba7416ce723c59cc4"
+    web_analytics_token = "a11048d2de6d46a594ca2ebb85cc94a4"
+  }
+
+  deployment_configs {
+    production {
+      fail_open   = true
+      usage_model = "standard"
+    }
+    preview {
+      fail_open   = true
+      usage_model = "standard"
+    }
   }
 }
 
