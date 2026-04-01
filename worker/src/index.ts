@@ -54,7 +54,7 @@ export default {
 
     let body: ContactBody;
     try {
-      body = await request.json<ContactBody>();
+      body = await request.json() as ContactBody;
     } catch {
       return new Response(JSON.stringify({ error: "Invalid JSON" }), {
         status: 400,
