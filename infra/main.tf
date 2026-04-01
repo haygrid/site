@@ -57,6 +57,13 @@ resource "cloudflare_pages_domain" "production" {
   domain       = "www.haygrid.com"
 }
 
+# Apex custom domain (CF Pages will redirect haygrid.com → www.haygrid.com)
+resource "cloudflare_pages_domain" "apex" {
+  account_id   = var.cloudflare_account_id
+  project_name = cloudflare_pages_project.haygrid.name
+  domain       = "haygrid.com"
+}
+
 # Staging custom domain
 resource "cloudflare_pages_domain" "staging" {
   account_id   = var.cloudflare_account_id
@@ -64,9 +71,18 @@ resource "cloudflare_pages_domain" "staging" {
   domain       = "staging.haygrid.com"
 }
 
+# DNS: apex → Pages (Cloudflare flattens CNAME at apex, redirects to www)
+resource "cloudflare_record" "apex" {
+  zone_id         = var.cloudflare_zone_id
+  name            = "haygrid.com"
+  type            = "CNAME"
+  content         = "haygrid-site.pages.dev"
+  proxied         = true
+  ttl             = 1
+  allow_overwrite = true
+}
+
 # DNS: www → Pages production
-# CUTOVER STEP: only apply this after verifying the site at haygrid-site.pages.dev
-# Run separately: tofu apply -target=cloudflare_record.www
 resource "cloudflare_record" "www" {
   zone_id         = var.cloudflare_zone_id
   name            = "www"
