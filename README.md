@@ -1,6 +1,26 @@
 # Haygrid Systems — Website
 
-A static marketing site built with Next.js + Tailwind, deployed to GitHub Pages via static export.
+A static marketing site built with Next.js + Tailwind, deployed to Cloudflare Pages.
+
+## Environments
+
+| Branch    | Environment | URL                        | Promoted by          |
+|-----------|-------------|----------------------------|----------------------|
+| `staging` | Staging     | staging.haygrid.com        | merge from feature branch |
+| `main`    | Production  | https://www.haygrid.com    | manual merge from `staging` at a stable checkpoint |
+
+## Development workflow
+
+1. **Branch from `staging`**
+   ```bash
+   git checkout staging
+   git pull
+   git checkout -b my-feature
+   ```
+2. **Make changes** — run `npm run precheckin` locally before pushing
+3. **Merge back to `staging`** via PR or direct merge; Cloudflare Pages deploys staging automatically
+4. **Close the issue** once changes are verified on staging
+5. **Promote to production** — manually merge `staging` → `main` when staging is at a stable checkpoint; Cloudflare Pages deploys production automatically
 
 ## Local dev
 
@@ -17,7 +37,7 @@ npm run dev
 npm test
 ```
 
-Covers `buildWhatsAppUrl` logic, `ContactForm` behaviour (field validation, WhatsApp submission, locked/edit state), `SolutionsTabs` tab switching, `Header` navigation and dropdowns, and link validation across all built pages in `docs/`.
+Covers `buildWhatsAppUrl` logic, `ContactForm` behaviour (field validation, WhatsApp submission, locked/edit state), `SolutionsTabs` tab switching, `Header` navigation and dropdowns, and link validation across all built pages in `out/`.
 
 ### E2E tests (Playwright)
 
@@ -33,7 +53,7 @@ Starts the dev server automatically and runs tests in Chromium across desktop an
 
 ### CI
 
-GitHub Actions runs `npm run build`, `npm test`, and `npm run test:e2e` on every push to `main`. See `.github/workflows/ci.yml`.
+GitHub Actions runs `npm run build`, `npm test`, and `npm run test:e2e` on every push to `main` and `staging`, and on PRs targeting either branch. See `.github/workflows/ci.yml`.
 
 ## Deploy (Cloudflare Pages)
 
