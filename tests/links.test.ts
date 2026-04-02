@@ -3,7 +3,7 @@ import { describe, it, expect } from "vitest";
 import fs from "fs";
 import path from "path";
 
-const DOCS_DIR = path.resolve(__dirname, "../docs");
+const OUTPUT_DIR = path.resolve(__dirname, "../out");
 
 const EXPECTED_ROUTES = [
   "/",
@@ -20,8 +20,8 @@ const EXPECTED_MAILTO = "mailto:info@haygrid.com";
 const EXPECTED_WHATSAPP_NUMBER = "6580950315";
 
 function routeToHtmlPath(route: string): string {
-  if (route === "/") return path.join(DOCS_DIR, "index.html");
-  return path.join(DOCS_DIR, route.replace(/^\//, ""), "index.html");
+  if (route === "/") return path.join(OUTPUT_DIR, "index.html");
+  return path.join(OUTPUT_DIR, route.replace(/^\//, ""), "index.html");
 }
 
 function extractLinks(html: string): string[] {
@@ -58,8 +58,8 @@ describe("Link validation", () => {
       it.each(internalLinks)("internal link %s resolves to a file in docs/", (href) => {
         // Strip trailing slash and check for index.html, or check direct file
         const normalised = href.endsWith("/") ? href : `${href}/`;
-        const indexPath = path.join(DOCS_DIR, normalised.replace(/^\//, ""), "index.html");
-        const directPath = path.join(DOCS_DIR, href.replace(/^\//, ""));
+        const indexPath = path.join(OUTPUT_DIR, normalised.replace(/^\//, ""), "index.html");
+        const directPath = path.join(OUTPUT_DIR, href.replace(/^\//, ""));
         const exists = fs.existsSync(indexPath) || fs.existsSync(directPath);
         expect(exists, `Broken internal link: ${href} on page ${route}`).toBe(true);
       });
