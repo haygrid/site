@@ -55,7 +55,7 @@ describe("Link validation", () => {
     describe(`${route}`, () => {
       const internalLinks = links.filter((l) => l.startsWith("/") && !l.startsWith("//"));
 
-      it.each(internalLinks)("internal link %s resolves to a file in docs/", (href) => {
+      it.each(internalLinks)("internal link %s resolves to a file in out/", (href) => {
         // Strip trailing slash and check for index.html, or check direct file
         const normalised = href.endsWith("/") ? href : `${href}/`;
         const indexPath = path.join(OUTPUT_DIR, normalised.replace(/^\//, ""), "index.html");

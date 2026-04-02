@@ -35,37 +35,23 @@ Starts the dev server automatically and runs tests in Chromium across desktop an
 
 GitHub Actions runs `npm run build`, `npm test`, and `npm run test:e2e` on every push to `main`. See `.github/workflows/ci.yml`.
 
-## Deploy to GitHub Pages
+## Deploy (Cloudflare Pages)
 
-Run the full deploy pipeline (build → unit tests → E2E tests → push):
+Cloudflare Pages builds and deploys automatically on push to `main`. Before pushing, run the full pre-checkin gate (build → unit tests → E2E tests):
 
 ```bash
-npm run deploy
+npm run precheckin
 ```
 
-This will:
-1. Build the static export to `docs/`
-2. Run all Vitest unit and component tests
-3. Run all Playwright E2E tests
-4. Commit `docs/` if changed
-5. Push to GitHub
+If all tests pass, commit and push:
+
+```bash
+git push
+```
 
 **Any test failure aborts the deploy.**
 
-To deploy manually without the test gate:
-
-1. Build the static export:
-   ```bash
-   npm run build
-   ```
-2. Commit and push `docs/`:
-   ```bash
-   git add docs/
-   git commit -m "Build"
-   git push
-   ```
-
-GitHub Pages serves from the `docs/` folder on the `main` branch. The site is available at https://www.haygrid.com.
+The site is available at https://www.haygrid.com.
 
 ## Contact Worker (Cloudflare Worker + AWS SES)
 
