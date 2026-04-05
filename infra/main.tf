@@ -142,35 +142,15 @@ resource "cloudflare_record" "apex_aaaa" {
 }
 
 # ---------------------------------------------------------------------------
-# PHASE 2: Point www to Cloudflare Pages (after Phase 1 is stable)
+# PHASE 2: Point www to Cloudflare Pages
 # ---------------------------------------------------------------------------
-# Step 0: Run the following to get the www CNAME record ID:
-#         curl -s -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-#           "https://api.cloudflare.com/client/v4/zones/07c43d004be84d6665edaa1644b97396/dns_records?name=www.haygrid.com&type=CNAME" \
-#           | jq '.result[] | {id, content}'
-#         Record ID: 10a0749dd1f8cdef8aa7cb62b03b1ac1  content: haygrid.github.io
 
-# import {
-#   to = cloudflare_record.ghpages_www
-#   id = "07c43d004be84d6665edaa1644b97396/10a0749dd1f8cdef8aa7cb62b03b1ac1"
-# }
-#
-# resource "cloudflare_record" "ghpages_www" {
-#   zone_id = var.cloudflare_zone_id
-#   name    = "www"
-#   type    = "CNAME"
-#   content = "haygrid.github.io"
-#   proxied = true
-#   ttl     = 1
-# }
-#
-# After importing, remove ghpages_www resource + import block, then add:
-#
-# resource "cloudflare_record" "www" {
-#   zone_id = var.cloudflare_zone_id
-#   name    = "www"
-#   type    = "CNAME"
-#   content = "haygrid-site.pages.dev"
-#   proxied = true
-#   ttl     = 1
-# }
+# DNS: www → Pages production
+resource "cloudflare_record" "www" {
+  zone_id = var.cloudflare_zone_id
+  name    = "www"
+  type    = "CNAME"
+  content = "haygrid-site.pages.dev"
+  proxied = true
+  ttl     = 1
+}
