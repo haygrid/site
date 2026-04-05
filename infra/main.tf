@@ -46,6 +46,9 @@ resource "cloudflare_pages_project" "haygrid" {
     preview {
       fail_open   = true
       usage_model = "standard"
+      environment_variables = {
+        ROBOTS_NOINDEX = "true"
+      }
     }
   }
 }
