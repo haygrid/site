@@ -108,31 +108,38 @@ export default function ContactForm() {
   return (
     <div>
       {/* Contact method toggle */}
-      <div className="flex gap-2 mb-6">
-        <button
-          type="button"
-          aria-pressed={contactMethod === "whatsapp"}
-          onClick={() => handleMethodSwitch("whatsapp")}
-          className={`rounded-xl px-4 py-2 text-sm font-medium transition-colors ${
-            contactMethod === "whatsapp"
-              ? "bg-amber-400 text-zinc-900"
-              : "border border-zinc-300 dark:border-zinc-600 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800"
-          }`}
-        >
-          WhatsApp
-        </button>
-        <button
-          type="button"
-          aria-pressed={contactMethod === "email"}
-          onClick={() => handleMethodSwitch("email")}
-          className={`rounded-xl px-4 py-2 text-sm font-medium transition-colors ${
-            contactMethod === "email"
-              ? "bg-amber-400 text-zinc-900"
-              : "border border-zinc-300 dark:border-zinc-600 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800"
-          }`}
-        >
-          Email
-        </button>
+      <div className="mb-6">
+        <div className="flex gap-2">
+          <button
+            type="button"
+            aria-pressed={contactMethod === "whatsapp"}
+            onClick={() => handleMethodSwitch("whatsapp")}
+            className={`rounded-xl px-4 py-2 text-sm font-medium transition-colors ${
+              contactMethod === "whatsapp"
+                ? "bg-amber-400 text-zinc-900"
+                : "border border-zinc-300 dark:border-zinc-600 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800"
+            }`}
+          >
+            WhatsApp
+          </button>
+          <button
+            type="button"
+            aria-pressed={contactMethod === "email"}
+            onClick={() => handleMethodSwitch("email")}
+            className={`rounded-xl px-4 py-2 text-sm font-medium transition-colors ${
+              contactMethod === "email"
+                ? "bg-amber-400 text-zinc-900"
+                : "border border-zinc-300 dark:border-zinc-600 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800"
+            }`}
+          >
+            Email
+          </button>
+        </div>
+        <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
+          {contactMethod === "whatsapp"
+            ? "Opens WhatsApp with your enquiry pre-filled — tap Send in the app to complete it."
+            : "Your message is sent directly to our inbox — no extra step needed."}
+        </p>
       </div>
 
       <form onSubmit={contactMethod === "whatsapp" ? handleWhatsAppSubmit : handleEmailSubmit} className="space-y-5">
