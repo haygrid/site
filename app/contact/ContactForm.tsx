@@ -156,9 +156,6 @@ export default function ContactForm() {
           <div>
             <label htmlFor="email" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1.5">
               Email <span className="text-red-400">*</span>
-              {contactMethod === "whatsapp" && (
-                <span className="text-zinc-400 font-normal ml-1">— for follow-up</span>
-              )}
             </label>
             <input
               id="email"
@@ -174,7 +171,7 @@ export default function ContactForm() {
         {contactMethod === "email" && (
           <div>
             <label htmlFor="phone" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1.5">
-              Phone <span className="text-zinc-400 font-normal">(optional)</span>
+              Phone
             </label>
             <input
               id="phone"

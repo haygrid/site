@@ -120,11 +120,6 @@ describe("ContactForm", () => {
       expect(screen.queryByLabelText(/phone/i)).not.toBeInTheDocument();
     });
 
-    it("email label indicates it is a backup contact method", () => {
-      render(<ContactForm />);
-      expect(screen.getByText(/for follow-up/i)).toBeInTheDocument();
-    });
-
     it("name and email inputs are required", () => {
       render(<ContactForm />);
       expect(screen.getByLabelText(/name/i)).toBeRequired();
