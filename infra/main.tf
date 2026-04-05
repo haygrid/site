@@ -113,6 +113,7 @@ resource "cloudflare_record" "apex_a" {
   content    = "192.0.2.1"
   proxied    = true
   ttl        = 1
+  comment    = "apex to www redirect proxy"
   depends_on = [cloudflare_ruleset.redirect_apex_to_www]
 }
 
@@ -124,6 +125,7 @@ resource "cloudflare_record" "apex_aaaa" {
   content    = "100::"
   proxied    = true
   ttl        = 1
+  comment    = "apex to www redirect proxy"
   depends_on = [cloudflare_ruleset.redirect_apex_to_www]
 }
 
