@@ -108,7 +108,8 @@ export default function ContactForm() {
   return (
     <div>
       {/* Contact method toggle */}
-      <div className="mb-6">
+      <div className="flex items-center gap-3 mb-6">
+        <span className="text-sm text-zinc-500 dark:text-zinc-400 shrink-0">Contact us via:</span>
         <div className="flex gap-2">
           <button
             type="button"
@@ -135,11 +136,6 @@ export default function ContactForm() {
             Email
           </button>
         </div>
-        <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
-          {contactMethod === "whatsapp"
-            ? "Opens WhatsApp with your enquiry pre-filled — tap Send in the app to complete it."
-            : "Your message is sent directly to our inbox — no extra step needed."}
-        </p>
       </div>
 
       <form onSubmit={contactMethod === "whatsapp" ? handleWhatsAppSubmit : handleEmailSubmit} className="space-y-5">

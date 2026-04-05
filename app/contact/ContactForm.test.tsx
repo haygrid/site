@@ -93,25 +93,9 @@ describe("ContactForm", () => {
       expect(screen.getByRole("button", { name: "WhatsApp" })).toHaveAttribute("aria-pressed", "false");
     });
 
-    it("shows WhatsApp description when WhatsApp is selected", () => {
+    it("shows 'Contact us via:' label", () => {
       render(<ContactForm />);
-      expect(screen.getByText(/opens whatsapp/i)).toBeInTheDocument();
-    });
-
-    it("shows Email description when Email is selected", async () => {
-      const user = userEvent.setup();
-      render(<ContactForm />);
-      await user.click(screen.getByRole("button", { name: "Email" }));
-      expect(screen.getByText(/sent directly to our inbox/i)).toBeInTheDocument();
-    });
-
-    it("description changes when toggling between methods", async () => {
-      const user = userEvent.setup();
-      render(<ContactForm />);
-      expect(screen.getByText(/opens whatsapp/i)).toBeInTheDocument();
-      await user.click(screen.getByRole("button", { name: "Email" }));
-      expect(screen.queryByText(/opens whatsapp/i)).not.toBeInTheDocument();
-      expect(screen.getByText(/sent directly to our inbox/i)).toBeInTheDocument();
+      expect(screen.getByText(/contact us via:/i)).toBeInTheDocument();
     });
   });
 
